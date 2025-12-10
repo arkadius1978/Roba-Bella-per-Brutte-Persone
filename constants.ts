@@ -1,67 +1,35 @@
 import { Product, Category } from './types';
 
 export const PRODUCTS: Product[] = [
-  // --- LIBRI CARTACEI (BOOKS) ---
+  // --- LIBRI (BOOKS) ---
   {
-    id: "book-brutte-persone-paperback",
+    id: "book-brutte-persone",
     title: "I Conigli sono brutte persone",
     imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg",
     amazonUrl: "https://www.amazon.it/I-conigli-sono-brutte-persone/dp/B09Y2MNYYZ",
     category: Category.BOOKS,
-    description: "Il manuale fondamentale. Tutto quello che il tuo coniglio pensa di te, messo nero su bianco.",
+    description: "Una veterinaria con l’impulso adottivo, una trentina di animali, un marito paziente... Il libro è costruito come un diario divertente sulla convivenza tra bipedi, quadrupedi, pelosi e pennuti. Storie di cani, gatti, galline, oche, pecore e conigli trattate con frizzante ironia, ma anche ricordi del passato e riflessioni profonde sul dolore, la vita e la morte. I conigli sono brutte persone è un romanzo coinvolgente che si legge in un lampo!",
     quote: "La bibbia del disagio lagomorfo.",
     isBestSeller: true
   },
   {
-    id: "book-cura-coniglio-paperback",
+    id: "book-cura-coniglio",
     title: "Come prendersi cura di un coniglio senza finire in analisi",
     imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/61TxS+SAfgL.jpg",
     amazonUrl: "https://www.amazon.it/prendersi-coniglio-senza-finire-analisi/dp/B0BW3BJYLH",
     category: Category.BOOKS,
-    description: "Una guida essenziale per la salute mentale del proprietario di conigli.",
+    description: "In questo libro troverai molti suggerimenti utili per la cura del tuo coniglio. Si tratta di un manuale divertente scritto in chiave ironica, ma che prende sul serio l'argomento. Scritto da una veterinaria appassionata di animali da compagnia e innamorata dei conigli, diventerà una piacevole lettura per imparare l'arte della cura dei conigli per una adozione consapevole.",
     quote: "Perché il coniglio è carino, ma ti manda dallo psicologo.",
     isBestSeller: false
   },
   {
-    id: "book-tutta-questa-paperback",
+    id: "book-tutta-questa",
     title: "Tutta questa brutta gente",
-    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg", 
-    amazonUrl: "https://www.amazon.it/stores/Maia-Natacha-Fiorelli/author/B09YLP2N8R",
+    imageUrl: "https://m.media-amazon.com/images/I/618ALZYIHpL.jpg",
+    amazonUrl: "https://www.amazon.it/Tutta-questa-brutta-Natacha-Fiorelli/dp/B0C9SP2SWH",
     category: Category.BOOKS,
-    description: "Storie di ordinaria follia animale e umana.",
-    quote: "",
-    isBestSeller: false
-  },
-
-  // --- EBOOK / KINDLE ---
-  {
-    id: "book-brutte-persone-kindle",
-    title: "I Conigli sono brutte persone (eBook)",
-    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg",
-    amazonUrl: "https://www.amazon.it/I-conigli-sono-brutte-persone-ebook/dp/B09Y2MNYYZ",
-    category: Category.BOOKS,
-    description: "La versione digitale per leggere del disagio ovunque tu sia.",
-    quote: "",
-    isBestSeller: false
-  },
-  {
-    id: "book-cura-coniglio-kindle",
-    title: "Come prendersi cura di un coniglio... (eBook)",
-    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/61TxS+SAfgL.jpg",
-    amazonUrl: "https://www.amazon.it/prendersi-coniglio-senza-finire-analisi-ebook/dp/B0BW3BJYLH",
-    category: Category.BOOKS,
-    description: "Salute mentale in formato digitale. Leggero e portatile.",
-    quote: "",
-    isBestSeller: false
-  },
-  {
-    id: "book-tutta-questa-kindle",
-    title: "Tutta questa brutta gente (eBook)",
-    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg",
-    amazonUrl: "https://www.amazon.it/stores/Maia-Natacha-Fiorelli/author/B09YLP2N8R",
-    category: Category.BOOKS,
-    description: "Formato Kindle per le storie di brutta gente.",
-    quote: "",
+    description: "Tra cani, gatti, pecore, oche e galline, i conigli la fanno da padrone nelle preoccupazioni della nostra protagonista: una veterinaria che ce la mette tutta a mantenere l’armonia in giardino, tenendo conto della natura di ognuno. È proprio su questo punto che il libro si fa introspettivo e gli animali diventano un mezzo per riflettere, per non snaturare e non snaturarsi. Un libro divertente, ironico e dal ritmo incalzante che si legge in un baleno!",
+    quote: "Non siamo soli nel disagio.",
     isBestSeller: false
   },
 
@@ -69,7 +37,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-auzdxy",
     title: "Bunny Dad - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/712BRDQVF4L._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/712BRDQVF4L.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-Bunny-Dad-Maglietta/dp/B0CX23F231/ref=sr_1_3",
     category: Category.APPAREL,
     description: "Per il papà di coniglio che finge di comandare, ma in realtà esegue solo gli ordini.",
@@ -79,7 +47,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-xhghkf",
     title: "Rebel Bunny - Maglietta Donna",
-    imageUrl: "https://m.media-amazon.com/images/I/61D+gqUauJL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61D+gqUauJL.jpg",
     amazonUrl: "https://www.amazon.it/Donna-Rebel-orecchie-coniglio-Maglietta/dp/B0CXKMPVP7/ref=sr_1_4",
     category: Category.APPAREL,
     description: "Per le coniglie ribelli e le loro umane che non seguono le regole (tranne quelle del coniglio).",
@@ -89,7 +57,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-c2z208",
     title: "Rebel Bunny - Canotta",
-    imageUrl: "https://m.media-amazon.com/images/I/61AVKVOkIML._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61AVKVOkIML.jpg",
     amazonUrl: "https://www.amazon.it/Rebel-Bunny-orecchie-coniglio-Canotta/dp/B0CXKHLM9K/ref=sr_1_5",
     category: Category.APPAREL,
     description: "Freschezza estiva per mostrare i muscoli che usi per spostare i sacchi di fieno.",
@@ -99,7 +67,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-zxg7iy",
     title: "Rebel Bunny - Felpa",
-    imageUrl: "https://m.media-amazon.com/images/I/71RsJTlUzlL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71RsJTlUzlL.jpg",
     amazonUrl: "https://www.amazon.it/Rebel-Bunny-orecchie-coniglio-Felpa/dp/B0CXKDPQD1/ref=sr_1_6",
     category: Category.APPAREL,
     description: "Calda, comoda e con quel tocco di anarchia lagomorfa che non guasta mai.",
@@ -109,7 +77,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-r83oxd",
     title: "Rebel Bunny - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/710Lq7t2XBL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/710Lq7t2XBL.jpg",
     amazonUrl: "https://www.amazon.it/Rebel-Bunny-orecchie-coniglio-Cappuccio/dp/B0CXK7Y2HD/ref=sr_1_7",
     category: Category.APPAREL,
     description: "Cappuccio su, mondo fuori. Perfetta per le giornate no.",
@@ -119,7 +87,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-6iz6aa",
     title: "Rebel Bunny - Manica Raglan",
-    imageUrl: "https://m.media-amazon.com/images/I/71-24JV6JeL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71-24JV6JeL.jpg",
     amazonUrl: "https://www.amazon.it/orecchie-coniglio-Maglia-Maniche-Raglan/dp/B0CXK75GLD/ref=sr_1_8",
     category: Category.APPAREL,
     description: "Stile baseball per chi gioca nella squadra dei roditori.",
@@ -129,7 +97,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-z2pnk6",
     title: "Rebel Bunny - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/61pC16Rd4FL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61pC16Rd4FL.jpg",
     amazonUrl: "https://www.amazon.it/Rebel-Bunny-orecchie-coniglio-Maglietta/dp/B0CXK3NRQ3/ref=sr_1_9",
     category: Category.APPAREL,
     description: "Il classico must-have per il guardaroba di ogni schiavo umano.",
@@ -139,7 +107,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-i8drx5",
     title: "Rebel Bunny - Hoodie Zip",
-    imageUrl: "https://m.media-amazon.com/images/I/71dkLu-AhIL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71dkLu-AhIL.jpg",
     amazonUrl: "https://www.amazon.it/Rebel-Bunny-orecchie-coniglio-Cappuccio/dp/B0CXJZC3Q4/ref=sr_1_10",
     category: Category.APPAREL,
     description: "Comoda zip per vestirsi velocemente quando senti un rumore sospetto dall'altra stanza.",
@@ -149,7 +117,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-4kspka",
     title: "Bad Boy Coniglio - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/81m3QYXnGBL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81m3QYXnGBL.jpg",
     amazonUrl: "https://www.amazon.it/bad-boy-Coniglio-Felpa-Cappuccio/dp/B0CXDZ2NV3/ref=sr_1_12",
     category: Category.APPAREL,
     description: "Lui è cattivo. Lui morde i cavi. Lui è il Bad Boy.",
@@ -159,7 +127,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-ogc73t",
     title: "Bad Boy Coniglio - Felpa",
-    imageUrl: "https://m.media-amazon.com/images/I/81IedlW5CVL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81IedlW5CVL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-bad-Coniglio-Felpa/dp/B0CXDZ16B2/ref=sr_1_13",
     category: Category.APPAREL,
     description: "Sguardo torvo e orecchie basse. Attenzione.",
@@ -169,7 +137,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-c74iur",
     title: "Bad Boy Coniglio - Canotta",
-    imageUrl: "https://m.media-amazon.com/images/I/614j9hYA0kL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/614j9hYA0kL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-bad-Coniglio-Canotta/dp/B0CXDYKDZ9/ref=sr_1_14",
     category: Category.APPAREL,
     description: "Per un look da duro, anche se poi gli dai i bacini sul naso.",
@@ -179,7 +147,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-ti6zpd",
     title: "Bad Boy - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/71pYYg15OiL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71pYYg15OiL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-bad-Coniglio-Maglietta/dp/B0CXDWHQ74/ref=sr_1_19",
     category: Category.APPAREL,
     description: "L'uniforme ufficiale per chi convive con un teppista peloso.",
@@ -189,7 +157,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-fluhst",
     title: "Bunny Mum - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/81-lHWQskbL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81-lHWQskbL.jpg",
     amazonUrl: "https://www.amazon.it/Bunny-mum-Felpa-Cappuccio/dp/B0CX25SBM8/ref=sr_1_21",
     category: Category.APPAREL,
     description: "La divisa ufficiale della mamma coniglio. Tasca anteriore utile per nascondere premietti.",
@@ -199,7 +167,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-1xlic3",
     title: "Bunny Mum - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/71kPCxFdi6L._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71kPCxFdi6L.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-Bunny-mum-Maglietta/dp/B0CX242W4N/ref=sr_1_27",
     category: Category.APPAREL,
     description: "Il capo base. Se ne hai uno, ti serve questa.",
@@ -209,7 +177,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-0a1hzh",
     title: "Bunny Mum - Felpa",
-    imageUrl: "https://m.media-amazon.com/images/I/81lTCYnGTQL._AC_UL100_SR100,100_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81lTCYnGTQL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-Bunny-mum-Felpa/dp/B0CX23BMR1/ref=sr_1_31",
     category: Category.APPAREL,
     description: "Girocollo classico. Ottima per le riunioni Zoom dove non vuoi spiegare perché hai del fieno nei capelli.",
@@ -219,7 +187,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-5x7fg3",
     title: "Boss - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/717RYkXPF1L._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/717RYkXPF1L.jpg",
     amazonUrl: "https://www.amazon.it/coniglio-boss-capo-sono-Maglietta/dp/B0CW1LBG54/ref=sr_1_37",
     category: Category.APPAREL,
     description: "Dillo a tutti chi comanda davvero.",
@@ -229,7 +197,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-whd7gs",
     title: "Boss - Donna",
-    imageUrl: "https://m.media-amazon.com/images/I/71Z82wVTilL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71Z82wVTilL.jpg",
     amazonUrl: "https://www.amazon.it/Donna-coniglio-boss-Maglietta-Collo/dp/B0CW1KN657/ref=sr_1_38",
     category: Category.APPAREL,
     description: "Eleganza sottomessa.",
@@ -239,7 +207,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-p9krdt",
     title: "Boss - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/81BnxDBpIVL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81BnxDBpIVL.jpg",
     amazonUrl: "https://www.amazon.it/coniglio-boss-capo-Felpa-Cappuccio/dp/B0CW1933TW/ref=sr_1_40",
     category: Category.APPAREL,
     description: "Felpa con cappuccio ufficiale del sindacato servitori di conigli.",
@@ -249,7 +217,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-cq9f24",
     title: "I Love Animals - Felpa",
-    imageUrl: "https://m.media-amazon.com/images/I/710oro5KKBL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/710oro5KKBL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-love-animals-Felpa/dp/B0CQPCMWVJ/ref=sr_1_43",
     category: Category.APPAREL,
     description: "Per chi ama gli animali più delle persone. Molto di più.",
@@ -257,19 +225,9 @@ export const PRODUCTS: Product[] = [
     isBestSeller: false
   },
   {
-    id: "auto-5uqlqq",
-    title: "I conigli sono brutte persone - T-shirt",
-    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL._AC_UL100_SR100,100_.jpg",
-    amazonUrl: "https://www.amazon.it/I-conigli-sono-brutte-persone/dp/B09Y2MNYYZ/ref=rvi_d_sccl_5/257-6552221-1599542",
-    category: Category.APPAREL,
-    description: "Il manifesto programmatico. La verità scomoda che nessuno ha il coraggio di dire.",
-    quote: "Sono carini, ma dentro sono dei piccoli dittatori.",
-    isBestSeller: true
-  },
-  {
     id: "auto-gbq7zh",
     title: "I Conigli Sono Brutte Persone - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/61PVA-QZTuL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61PVA-QZTuL.jpg",
     amazonUrl: "https://www.amazon.it/conigli-sono-brutte-persone-Maglietta/dp/B0C3MFYC35/ref=sr_1_100",
     category: Category.APPAREL,
     description: "Cotone di qualità superiore per verità scomode superiori.",
@@ -279,7 +237,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-4fq48d",
     title: "I Conigli Sono Brutte Persone - Felpa",
-    imageUrl: "https://m.media-amazon.com/images/I/71EwOCKJ+JL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71EwOCKJ+JL.jpg",
     amazonUrl: "https://www.amazon.it/conigli-sono-brutte-persone-Felpa/dp/B0C3MCCHK3/ref=sr_1_101",
     category: Category.APPAREL,
     description: "Calda, morbida e brutalmente onesta.",
@@ -289,7 +247,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-gyor9v",
     title: "I Conigli Sono Brutte Persone - Donna",
-    imageUrl: "https://m.media-amazon.com/images/I/61uGexBI4UL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61uGexBI4UL.jpg",
     amazonUrl: "https://www.amazon.it/Donna-conigli-sono-brutte-persone/dp/B0C3MC89Z3/ref=sr_1_102",
     category: Category.APPAREL,
     description: "Taglio sagomato per chi non ha paura del giudizio del proprio animale.",
@@ -299,7 +257,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-q89a7z",
     title: "I Conigli Sono Brutte Persone - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/81oDChJKkUL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81oDChJKkUL.jpg",
     amazonUrl: "https://www.amazon.it/conigli-sono-brutte-persone-Cappuccio/dp/B0BWS24FCV/ref=sr_1_103",
     category: Category.APPAREL,
     description: "Cappuccio ampio per nascondere i morsi sulle orecchie.",
@@ -309,7 +267,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-1s1akb",
     title: "I Conigli Sono Brutte Persone - Felpa",
-    imageUrl: "https://m.media-amazon.com/images/I/71+FC77JczL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71+FC77JczL.jpg",
     amazonUrl: "https://www.amazon.it/conigli-sono-brutte-persone-Felpa/dp/B0BWS1JZJJ/ref=sr_1_104",
     category: Category.APPAREL,
     description: "Un classico intramontabile del disagio.",
@@ -319,7 +277,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-g3695b",
     title: "I Conigli Sono Brutte Persone - Canotta",
-    imageUrl: "https://m.media-amazon.com/images/I/61CMQfcTdPL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61CMQfcTdPL.jpg",
     amazonUrl: "https://www.amazon.it/conigli-sono-brutte-persone-Canotta/dp/B0BWS1FSCP/ref=sr_1_105",
     category: Category.APPAREL,
     description: "Per affrontare il caldo mentre il coniglio occupa il ventilatore.",
@@ -329,7 +287,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-bgdofq",
     title: "I Conigli Sono Brutte Persone - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/71KnPnBmQOL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71KnPnBmQOL.jpg",
     amazonUrl: "https://www.amazon.it/conigli-sono-brutte-persone-Maglietta/dp/B0BPQTMT6J/ref=sr_1_113",
     category: Category.APPAREL,
     description: "Grigio melange, come l'umore del tuo coniglio.",
@@ -341,7 +299,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-ynzkbe",
     title: "Gatto & Gabbiano - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/81YAp7m4UfL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81YAp7m4UfL.jpg",
     amazonUrl: "https://www.amazon.it/Gatto-gabbiano-Brutta-gente-Cappuccio/dp/B0C573JFTM/ref=sr_1_90",
     category: Category.APPAREL,
     description: "Un'amicizia improbabile nata dal comune disprezzo per il genere umano.",
@@ -351,7 +309,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-o4751w",
     title: "Gatto & Gabbiano - Felpa",
-    imageUrl: "https://m.media-amazon.com/images/I/81zTWQb-RKL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81zTWQb-RKL.jpg",
     amazonUrl: "https://www.amazon.it/Gatto-gabbiano-Brutta-gente-Felpa/dp/B0C572BY5L/ref=sr_1_96",
     category: Category.APPAREL,
     description: "Gatti e gabbiani: l'alleanza del male che non ti aspettavi.",
@@ -363,7 +321,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-ou18ps",
     title: "Il Capo Sono Io - Cane Stiloso",
-    imageUrl: "https://m.media-amazon.com/images/I/61nYdnH7zKL._AC_UL100_SR100,100_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61nYdnH7zKL.jpg",
     amazonUrl: "https://www.amazon.it/Capo-Sono-Cane-Stiloso-Maglietta/dp/B0CW619YKV/ref=rvi_d_sccl_4/257-6552221-1599542",
     category: Category.APPAREL,
     description: "Per cani con autostima e proprietari consapevoli del loro ruolo subordinato.",
@@ -373,7 +331,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-3zud96",
     title: "Il Capo Sono Io - T-Shirt",
-    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/61nYdnH7zKL._AC_UL100_SR100,100_.jpg",
+    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/61nYdnH7zKL.jpg",
     amazonUrl: "https://www.amazon.it/Capo-Sono-Cane-Stiloso-Maglietta/dp/B0CW619YKV/ref=rvi_d_sccl_4/257-6552221-1599542",
     category: Category.APPAREL,
     description: "Non c'è dubbio su chi comandi in casa (spoiler: ha 4 zampe).",
@@ -385,7 +343,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-9icdvj",
     title: "Gallina Ehilà - Manica Lunga",
-    imageUrl: "https://m.media-amazon.com/images/I/81F+yJ8DpbL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81F+yJ8DpbL.jpg",
     amazonUrl: "https://www.amazon.it/Gallina-Ehil%C3%A0-Maglia-a-Manica/dp/B0C5745VHR/ref=sr_1_87",
     category: Category.APPAREL,
     description: "Un saluto pennuto che ti giudica silenziosamente.",
@@ -395,7 +353,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-uarb59",
     title: "Gallina Ehilà - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/61YWIC3xhbL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61YWIC3xhbL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-Gallina-Ehil%C3%A0-Maglietta/dp/B0C573YCL6/ref=sr_1_88",
     category: Category.APPAREL,
     description: "Ehilà! La gallina ti saluta, ma non vuole socializzare.",
@@ -405,7 +363,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-sg5y4l",
     title: "Gallina Ehilà - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/811tAON7GTL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/811tAON7GTL.jpg",
     amazonUrl: "https://www.amazon.it/Gallina-Ehil%C3%A0-Felpa-con-Cappuccio/dp/B0C573D95V/ref=sr_1_91",
     category: Category.APPAREL,
     description: "Calore e piume. Perfetta per il pollaio urbano.",
@@ -415,7 +373,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-f33jbw",
     title: "Gallina Ehilà - Felpa",
-    imageUrl: "https://m.media-amazon.com/images/I/81UnSmLHxNL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81UnSmLHxNL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-Gallina-Ehil%C3%A0-Felpa/dp/B0C573CCSP/ref=sr_1_92",
     category: Category.APPAREL,
     description: "Girocollo classico con pollo sospettoso.",
@@ -427,7 +385,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-7ck3x2",
     title: "Riccio Brutta Gente - Raglan",
-    imageUrl: "https://m.media-amazon.com/images/I/61L2DKJWBvL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61L2DKJWBvL.jpg",
     amazonUrl: "https://www.amazon.it/Riccio-Brutta-Maglia-Maniche-Raglan/dp/B0C5724SX7/ref=sr_1_97",
     category: Category.APPAREL,
     description: "Lui si chiude a riccio. Tu dovresti fare lo stesso con certe persone.",
@@ -437,7 +395,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-pzs9cl",
     title: "Brutta Gente Trio - Manica Lunga",
-    imageUrl: "https://m.media-amazon.com/images/I/71PqFFhPK9L._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71PqFFhPK9L.jpg",
     amazonUrl: "https://www.amazon.it/Brutta-gente-3-Maglia-Manica/dp/B0C5723L2S/ref=sr_1_98",
     category: Category.APPAREL,
     description: "I tre dell'apocalisse animale riuniti in una sola maglietta.",
@@ -447,7 +405,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-mtmv1k",
     title: "Brutta Gente Trio - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/71fq8fyW6DL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71fq8fyW6DL.jpg",
     amazonUrl: "https://www.amazon.it/Brutta-gente-3-Felpa-Cappuccio/dp/B0C57166M5/ref=sr_1_99",
     category: Category.APPAREL,
     description: "Massimo comfort per chi preferisce la compagnia del branco misto.",
@@ -459,7 +417,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-ukhf4q",
     title: "I Love Animals - Canotta",
-    imageUrl: "https://m.media-amazon.com/images/I/71Z53EaVWTL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71Z53EaVWTL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-love-animals-Canotta/dp/B0CQP9MTKJ/ref=sr_1_49",
     category: Category.APPAREL,
     description: "Fresco amore per gli animali, perfetto per l'estate.",
@@ -469,7 +427,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-t0h9la",
     title: "I Love Animals - Donna",
-    imageUrl: "https://m.media-amazon.com/images/I/610KrgB8kqL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/610KrgB8kqL.jpg",
     amazonUrl: "https://www.amazon.it/love-animals-Maglietta-Collo/dp/B0CQP99JVG/ref=sr_1_50",
     category: Category.APPAREL,
     description: "Taglio femminile per dichiarare il tuo amore per il branco.",
@@ -479,7 +437,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-pabet1",
     title: "I Love Animals - T-Shirt",
-    imageUrl: "https://m.media-amazon.com/images/I/61Eb-OL9PmL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61Eb-OL9PmL.jpg",
     amazonUrl: "https://www.amazon.it/Brutte-persone-love-animals-Maglietta/dp/B0CQPCBYB1/ref=sr_1_45",
     category: Category.APPAREL,
     description: "Semplice verità stampata su cotone: gli animali sono meglio.",
@@ -489,7 +447,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "auto-mv8ekj",
     title: "I Love Animals - Hoodie",
-    imageUrl: "https://m.media-amazon.com/images/I/71k5tcQ4oXL._AC_UL320_.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/71k5tcQ4oXL.jpg",
     amazonUrl: "https://www.amazon.it/I-love-animals-Felpa-Cappuccio/dp/B0CQPC7917/ref=sr_1_46",
     category: Category.APPAREL,
     description: "Un abbraccio caldo per chi preferisce abbracciare il cane piuttosto che i parenti.",
