@@ -3,6 +3,8 @@ import { Navbar } from './components/Navbar';
 import { ProductCard } from './components/ProductCard';
 import { ProductModal } from './components/ProductModal';
 import { GameModal } from './components/GameModal';
+import { LegalModal } from './components/LegalModal';
+import { CookieBanner } from './components/CookieBanner';
 import { Footer } from './components/Footer';
 import { PRODUCTS } from './constants';
 import { Category, Product } from './types';
@@ -13,8 +15,12 @@ const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  
+  // Modals State
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isGameOpen, setIsGameOpen] = useState(false);
+  const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
+  const [legalModalTab, setLegalModalTab] = useState<'privacy' | 'cookie'>('privacy');
 
   // Filter Logic - Only applies when NOT in HOME view (unless search is active)
   const filteredProducts = useMemo(() => {
@@ -38,6 +44,11 @@ const App: React.FC = () => {
   const handleProductClick = (product: Product) => {
     setSelectedProduct(product);
     setIsModalOpen(true);
+  };
+
+  const openLegal = (tab: 'privacy' | 'cookie') => {
+    setLegalModalTab(tab);
+    setIsLegalModalOpen(true);
   };
 
   const isHomeView = selectedCategory === Category.HOME && !searchQuery;
@@ -339,8 +350,10 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <Footer />
+      <Footer onOpenPrivacy={() => openLegal('privacy')} onOpenCookie={() => openLegal('cookie')} />
       
+      <CookieBanner onOpenPolicy={() => openLegal('cookie')} />
+
       <ProductModal 
         product={selectedProduct} 
         isOpen={isModalOpen} 
@@ -350,6 +363,12 @@ const App: React.FC = () => {
       <GameModal 
         isOpen={isGameOpen} 
         onClose={() => setIsGameOpen(false)} 
+      />
+
+      <LegalModal 
+        isOpen={isLegalModalOpen}
+        onClose={() => setIsLegalModalOpen(false)}
+        defaultTab={legalModalTab}
       />
     </div>
   );

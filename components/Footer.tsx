@@ -1,7 +1,12 @@
 import React from 'react';
 import { Instagram, Facebook, Heart, PawPrint } from 'lucide-react';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onOpenPrivacy?: () => void;
+  onOpenCookie?: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy, onOpenCookie }) => {
   return (
     <footer className="bg-slate-900 text-pink-100 pt-16 pb-8 border-t-8 border-pink-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,6 +30,14 @@ export const Footer: React.FC = () => {
               <li><a href="#bichitos" className="hover:text-white hover:underline transition decoration-green-500 decoration-2 flex items-center gap-2"><PawPrint size={14} className="text-green-500"/> Associazione Bichitos</a></li>
               <li><a href="#autore" className="hover:text-white hover:underline transition decoration-pink-500 decoration-2">L'Autrice</a></li>
               <li><a href="#catalogo" className="hover:text-white hover:underline transition decoration-pink-500 decoration-2">Catalogo</a></li>
+              
+              {/* Legal Links */}
+              <li className="pt-2">
+                <button onClick={onOpenPrivacy} className="text-slate-500 hover:text-white text-xs hover:underline transition">Privacy Policy</button>
+              </li>
+              <li>
+                <button onClick={onOpenCookie} className="text-slate-500 hover:text-white text-xs hover:underline transition">Cookie Policy</button>
+              </li>
             </ul>
           </div>
 
@@ -48,7 +61,7 @@ export const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} Maia Natacha Fiorelli. Tutti i diritti riservati.
           </p>
           <p className="text-[10px] text-slate-600 uppercase tracking-wider bg-slate-800 px-3 py-1 rounded-full">
-            Affiliato Amazon: Guadagno dagli acquisti idonei
+            In qualità di Affiliato Amazon, ricevo un guadagno dagli acquisti idonei
           </p>
         </div>
       </div>
