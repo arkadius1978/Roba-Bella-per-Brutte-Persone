@@ -47,8 +47,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy, onOpenCookie }) =
               <a href="https://www.facebook.com/iconiglisonobruttepersone" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-2xl hover:bg-[#1877F2] hover:text-white transition duration-300 transform hover:-translate-y-1">
                 <Facebook size={20} />
               </a>
-              {/* Placeholder for future instagram if needed */}
-              <a href="#" className="p-3 bg-slate-800 rounded-2xl hover:bg-[#E4405F] hover:text-white transition duration-300 transform hover:-translate-y-1 opacity-50 cursor-not-allowed" title="Presto disponibile">
+              {/* Instagram Link Active */}
+              <a href="https://www.instagram.com/bruttissimepersone?igsh=aGlnMWFsZjJwb3Ez" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-2xl hover:bg-[#E4405F] hover:text-white transition duration-300 transform hover:-translate-y-1">
                 <Instagram size={20} />
               </a>
             </div>
