@@ -98,9 +98,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            <a href="#bichitos" onClick={() => setIsMobileMenuOpen(false)} className="block px-4 py-2 rounded-xl hover:bg-green-50 text-green-700 font-cartoony text-xl font-bold">
-              Associazione Bichitos
-            </a>
             <a href="#autore" onClick={() => setIsMobileMenuOpen(false)} className="block px-4 py-2 rounded-xl hover:bg-pink-50 font-cartoony text-xl text-slate-700 font-bold">
               L'Autrice
             </a>

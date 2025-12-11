@@ -8,7 +8,7 @@ import { CookieBanner } from './components/CookieBanner';
 import { Footer } from './components/Footer';
 import { PRODUCTS } from './constants';
 import { Category, Product } from './types';
-import { Filter, Rabbit, Cat, Dog, Bird, ArrowDown, BookOpen, Skull, HeartHandshake, Gamepad2, PawPrint } from 'lucide-react';
+import { Filter, Rabbit, Cat, Dog, Bird, ArrowDown, BookOpen, Skull, HeartHandshake, Gamepad2, ShoppingBag } from 'lucide-react';
 
 const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category>(Category.HOME);
@@ -97,22 +97,50 @@ const App: React.FC = () => {
               <br/>Tutto il disagio che cercavi, ora stampato su cotone.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* Main Action Buttons */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto mt-10 px-4">
+                {/* Button 1: Apparel */}
                 <button 
-                  onClick={() => {
-                    const el = document.getElementById('catalogo');
-                    el?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="flex items-center justify-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-full font-cartoony font-bold text-lg hover:bg-slate-700 hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer"
+                    onClick={() => {
+                        setSelectedCategory(Category.APPAREL);
+                        setTimeout(() => document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' }), 100);
+                    }}
+                    className="group relative bg-white border-4 border-pink-200 p-5 rounded-[2rem] hover:border-pink-500 hover:shadow-xl hover:shadow-pink-100 transition-all duration-300 text-left hover:-translate-y-1 flex items-center gap-5"
                 >
-                    Entra nella tana <ArrowDown size={20} />
+                    <div className="bg-pink-100 text-pink-500 p-4 rounded-2xl group-hover:bg-pink-500 group-hover:text-white transition-colors">
+                        <ShoppingBag size={32} strokeWidth={2.5} />
+                    </div>
+                    <div>
+                        <h3 className="font-cartoony font-bold text-2xl text-slate-800 group-hover:text-pink-600 transition-colors">Magliette</h3>
+                        <p className="text-slate-500 text-sm leading-tight font-medium mt-1">Vestiti con il giusto disagio</p>
+                    </div>
                 </button>
-                
+
+                {/* Button 2: Books */}
+                <button 
+                    onClick={() => {
+                        setSelectedCategory(Category.BOOKS);
+                        setTimeout(() => document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' }), 100);
+                    }}
+                    className="group relative bg-white border-4 border-slate-200 p-5 rounded-[2rem] hover:border-slate-800 hover:shadow-xl hover:shadow-slate-200 transition-all duration-300 text-left hover:-translate-y-1 flex items-center gap-5"
+                >
+                    <div className="bg-slate-100 text-slate-600 p-4 rounded-2xl group-hover:bg-slate-800 group-hover:text-white transition-colors">
+                        <BookOpen size={32} strokeWidth={2.5} />
+                    </div>
+                    <div>
+                        <h3 className="font-cartoony font-bold text-2xl text-slate-800 group-hover:text-slate-800 transition-colors">Libri</h3>
+                        <p className="text-slate-500 text-sm leading-tight font-medium mt-1">Letture per brutte persone</p>
+                    </div>
+                </button>
+            </div>
+            
+            {/* Secondary Action: Game */}
+            <div className="mt-8">
                  <button 
                   onClick={() => setIsGameOpen(true)}
-                  className="flex items-center justify-center gap-2 bg-pink-100 text-pink-600 border-2 border-pink-200 px-8 py-4 rounded-full font-cartoony font-bold text-lg hover:bg-pink-200 hover:text-pink-700 hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer"
+                  className="inline-flex items-center gap-2 text-slate-400 hover:text-pink-500 font-bold transition-all text-sm hover:scale-105"
                 >
-                    <Gamepad2 size={20} /> Gioca ora
+                    <Gamepad2 size={18} /> Psst... ti annoi? Gioca al videogame nascosto
                 </button>
             </div>
         </div>
@@ -277,33 +305,6 @@ const App: React.FC = () => {
           </div>
         )}
 
-        {/* Bichitos Association Section */}
-        <div id="bichitos" className="mt-32 bg-green-50 rounded-[3rem] p-8 md:p-16 relative overflow-hidden border-4 border-green-100">
-             <div className="absolute top-0 left-0 w-32 h-32 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
-             <div className="absolute bottom-0 right-0 w-48 h-48 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
-             
-             <div className="relative z-10 max-w-4xl mx-auto text-center">
-                <div className="inline-flex items-center justify-center p-4 bg-white rounded-full shadow-sm mb-6 text-green-500">
-                    <PawPrint size={48} />
-                </div>
-                <h2 className="text-4xl md:text-5xl font-cartoony font-bold text-green-800 mb-6">Associazione Bichitos</h2>
-                <div className="prose prose-lg text-green-900/80 font-medium mx-auto space-y-4 leading-relaxed max-w-2xl">
-                    <p className="text-xl">
-                      "Bichitos è una associazione per animali e animalari. Vogliamo aiutare le creature in difficoltà e per questo ci serve un pochino di aiuto. Vorremmo anche diffondere l'amore e il rispetto per gli animali. Possono davvero rendere la nostra vita più bella."
-                    </p>
-                    <p className="text-sm font-bold text-green-600 pt-4 uppercase tracking-wider">
-                       Fondata da Maia Natacha Fiorelli
-                    </p>
-                </div>
-                
-                <div className="mt-8">
-                     <button className="bg-green-600 text-white px-8 py-3 rounded-full font-bold font-cartoony hover:bg-green-700 transition shadow-lg hover:-translate-y-1 cursor-pointer">
-                        Sostieni l'associazione
-                     </button>
-                </div>
-             </div>
-        </div>
-
         {/* Author Bio Section */}
         <div id="autore" className="mt-20 bg-pink-50 rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
             {/* Background decoration */}
@@ -322,7 +323,7 @@ const App: React.FC = () => {
                           Per mantenere gli studi universitari ed una certa autonomia economica, durante gli anni dell'università, fa la barista e impara che la fauna umana è la più stimolante. Così inizia anche a guardarsi dentro, un po' per gioco e ancora con poca tecnica.
                         </p>
                         <p>
-                          Si laurea a marzo del 2005 e a dicembre dello stesso anno apre un ambulatorio veterinario nel lodigiano, ma nove anni dopo si trasferisce nel basso pavese per amore (tanto le radici le ha sempre tenute corte). Cambia vita e si dedica, come veterinaria, alle visite a domicilio dei suoi pazienti e alla cura di molti altri animali, figli di nessuno, attraverso una associazione chiamata Bichitos.
+                          Si laurea a marzo del 2005 e a dicembre dello stesso anno apre un ambulatorio veterinario nel lodigiano, ma nove anni dopo si trasferisce nel basso pavese per amore (tanto le radici le ha sempre tenute corte). Cambia vita e si dedica, come veterinaria, alle visite a domicilio dei suoi pazienti e alla cura di molti altri animali abbandonati e bisognosi.
                         </p>
                         <p className="text-pink-600 font-bold italic">
                           Maia ama gli animali, la fotografia, la lettura e la scrittura e vorrebbe che le giornate durassero 48 ore.
@@ -332,13 +333,6 @@ const App: React.FC = () => {
                 <div className="order-1 md:order-2 flex justify-center">
                     <div className="relative w-64 h-64 md:w-80 md:h-80">
                         <div className="absolute inset-0 bg-white rounded-3xl transform rotate-3 shadow-xl border-4 border-pink-100 flex items-center justify-center overflow-hidden">
-                             {/* 
-                                NOTA PER L'UTENTE:
-                                Per inserire la tua foto reale:
-                                1. Carica la foto su un sito come https://imgur.com/upload
-                                2. Copia il "Direct Link" (deve finire con .jpg o .png)
-                                3. Incolla il link qui sotto al posto di "https://picsum.photos/..."
-                             */}
                              <img src="https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/562381942_836083578997755_5680181863786713456_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Hf-_gbGb-4UQ7kNvwE0_zjS&_nc_oc=AdlsNf4w4U69J3dRhClsY46Exi1Nw_aw1nBPjqbhdwzPZYAUKBAnvXJFRDCi0Soae4U&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=q_cW363xtixBE82_CGXx1A&oh=00_AfkLpiTE852Tcayftt1G_Muz_C44ffG5TDJxot65bivBZQ&oe=693F773E" alt="Maia Natacha Fiorelli" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                         </div>
                         <div className="absolute -bottom-4 -right-4 bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-cartoony font-bold shadow-lg transform -rotate-3 border-2 border-white">

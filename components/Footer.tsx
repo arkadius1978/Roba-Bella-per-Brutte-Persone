@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Heart, PawPrint } from 'lucide-react';
+import { Instagram, Facebook, Heart } from 'lucide-react';
 
 interface FooterProps {
   onOpenPrivacy?: () => void;
@@ -27,7 +27,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy, onOpenCookie }) =
           <div>
             <h4 className="font-bold uppercase tracking-widest text-xs text-pink-500 mb-6 bg-slate-800 inline-block px-2 py-1 rounded">Menu</h4>
             <ul className="space-y-3 text-sm font-medium">
-              <li><a href="#bichitos" className="hover:text-white hover:underline transition decoration-green-500 decoration-2 flex items-center gap-2"><PawPrint size={14} className="text-green-500"/> Associazione Bichitos</a></li>
               <li><a href="#autore" className="hover:text-white hover:underline transition decoration-pink-500 decoration-2">L'Autrice</a></li>
               <li><a href="#catalogo" className="hover:text-white hover:underline transition decoration-pink-500 decoration-2">Catalogo</a></li>
               
