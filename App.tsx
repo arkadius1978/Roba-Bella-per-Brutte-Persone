@@ -56,8 +56,6 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar 
-        searchQuery={searchQuery} 
-        setSearchQuery={setSearchQuery}
         isMobileMenuOpen={isMobileMenuOpen}
         setIsMobileMenuOpen={setIsMobileMenuOpen}
         onOpenGame={() => setIsGameOpen(true)}

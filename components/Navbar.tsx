@@ -1,17 +1,13 @@
 import React from 'react';
-import { Search, Menu, X, Heart, Gamepad2, Instagram, Facebook } from 'lucide-react';
+import { Menu, X, Heart, Gamepad2, Instagram, Facebook } from 'lucide-react';
 
 interface NavbarProps {
-  searchQuery: string;
-  setSearchQuery: (query: string) => void;
   isMobileMenuOpen: boolean;
   setIsMobileMenuOpen: (isOpen: boolean) => void;
   onOpenGame: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ 
-  searchQuery, 
-  setSearchQuery,
   isMobileMenuOpen,
   setIsMobileMenuOpen,
   onOpenGame
@@ -28,22 +24,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span className="font-cartoony font-bold text-2xl tracking-tight text-pink-600 group-hover:text-pink-500 transition-colors">
               Roba Bella
             </span>
-          </div>
-
-          {/* Desktop Search */}
-          <div className="hidden md:flex flex-1 max-w-md mx-8">
-            <div className="relative w-full group">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Search size={18} className="text-pink-300 group-focus-within:text-pink-500 transition-colors" />
-              </div>
-              <input
-                type="text"
-                className="block w-full pl-10 pr-4 py-2 border-2 border-pink-100 rounded-full bg-pink-50/50 placeholder-pink-300 focus:outline-none focus:border-pink-400 focus:bg-white focus:ring-0 transition-all duration-300 text-sm font-cartoony text-slate-700"
-                placeholder="Cerca un animaletto..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </div>
           </div>
 
           {/* Social / External Links (Desktop) */}
@@ -92,18 +72,6 @@ export const Navbar: React.FC<NavbarProps> = ({
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-b-4 border-pink-100 shadow-lg absolute w-full rounded-b-3xl animate-fade-in-down">
           <div className="px-4 pt-4 pb-6 space-y-4">
-             <div className="relative w-full">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Search size={18} className="text-pink-300" />
-              </div>
-              <input
-                type="text"
-                className="block w-full pl-10 pr-3 py-3 border-2 border-pink-100 rounded-full leading-5 bg-pink-50 placeholder-pink-300 focus:outline-none focus:border-pink-400 text-sm font-cartoony"
-                placeholder="Cerca..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </div>
             
             <div className="grid grid-cols-2 gap-3 pt-2">
                 <a href="https://www.facebook.com/iconiglisonobruttepersone" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#1877F2] text-white font-cartoony text-sm font-bold shadow-sm">
