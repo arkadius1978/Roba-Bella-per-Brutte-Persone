@@ -115,6 +115,19 @@ const App: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   };
 
+  const handleNavigateToCategory = (category: Category) => {
+    // 1. Reset URL to home
+    window.history.pushState({}, '', window.location.pathname);
+    // 2. Clear current post
+    setCurrentBlogPost(null);
+    // 3. Set category
+    setSelectedCategory(category);
+    // 4. Scroll to catalog
+    setTimeout(() => {
+        document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
+
   const openLegal = (tab: 'privacy' | 'cookie') => {
     setLegalModalTab(tab);
     setIsLegalModalOpen(true);
@@ -138,7 +151,11 @@ const App: React.FC = () => {
 
       {/* CONDITIONAL RENDER: If we have a blog post selected, show ONLY that page */}
       {currentBlogPost ? (
-          <BlogPostPage post={currentBlogPost} onBack={handleBackToHome} />
+          <BlogPostPage 
+            post={currentBlogPost} 
+            onBack={handleBackToHome} 
+            onNavigateToCategory={handleNavigateToCategory}
+          />
       ) : (
         <>
             {/* HERO SECTION (Main Site) */}

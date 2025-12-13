@@ -1,14 +1,15 @@
 
 import React, { useEffect } from 'react';
-import { ArrowLeft, Calendar, User, Clock, Share2, Facebook, Link as LinkIcon, MessageCircle } from 'lucide-react';
-import { BlogPost } from '../types';
+import { ArrowLeft, Calendar, User, Clock, Share2, Facebook, Link as LinkIcon, MessageCircle, ShoppingBag, BookOpen } from 'lucide-react';
+import { BlogPost, Category } from '../types';
 
 interface BlogPostPageProps {
   post: BlogPost | null;
   onBack: () => void;
+  onNavigateToCategory: (category: Category) => void;
 }
 
-export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack }) => {
+export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onNavigateToCategory }) => {
   if (!post) return null;
 
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
@@ -81,41 +82,70 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack }) => {
   return (
     <div className="min-h-screen bg-white animate-fade-in">
       
-      {/* Hero Section */}
-      <div className="relative h-[50vh] md:h-[60vh] w-full bg-slate-100">
-        <img 
-          src={post.imageUrl} 
-          alt={post.title}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+      {/* NEW HERO SECTION: Magazine Style */}
+      <div className="relative bg-slate-900 overflow-hidden pb-12 pt-24 md:pt-32 px-4 shadow-xl">
         
-        <div className="absolute top-4 left-4 z-20">
+        {/* Abstract Blurred Background Layer */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img 
+                src={post.imageUrl} 
+                className="w-full h-full object-cover opacity-30 blur-2xl scale-110 saturate-150"
+                alt=""
+                aria-hidden="true"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900"></div>
+        </div>
+
+        {/* Navigation Button */}
+        <div className="absolute top-6 left-4 md:left-8 z-20">
              <button 
                 onClick={onBack}
-                className="flex items-center gap-2 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white px-4 py-2 rounded-full font-bold transition-all hover:scale-105"
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-full font-bold transition-all backdrop-blur-md border border-white/10 hover:scale-105"
              >
-                <ArrowLeft size={20} /> Torna alla Home
+                <ArrowLeft size={18} /> <span className="hidden sm:inline">Torna alla Home</span>
              </button>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 max-w-5xl mx-auto text-white z-10">
-            <div className="flex flex-wrap gap-4 text-sm font-medium opacity-90 mb-4">
-                <span className="flex items-center gap-1 bg-pink-500/80 px-3 py-1 rounded-lg backdrop-blur-sm">
-                    <Calendar size={14}/> {post.date}
-                </span>
-                <span className="flex items-center gap-1 bg-slate-800/80 px-3 py-1 rounded-lg backdrop-blur-sm">
-                    <Clock size={14}/> {post.readTime}
-                </span>
-            </div>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-cartoony font-bold leading-tight shadow-sm mb-4">
-                {post.title}
-            </h1>
-            <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-white text-pink-500 flex items-center justify-center font-bold">
-                    <User size={20} />
+        {/* Hero Content Grid */}
+        <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            
+            {/* Image Poster - Now contained in a box to prevent cropping */}
+            <div className="w-full max-w-lg md:w-5/12 shrink-0">
+                <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 rotate-1 transform hover:rotate-0 transition-transform duration-500 bg-slate-800">
+                    <img 
+                      src={post.imageUrl} 
+                      alt={post.title}
+                      className="w-full h-full object-cover" 
+                    />
                 </div>
-                <p className="font-bold text-lg">{post.author}</p>
+            </div>
+
+            {/* Text Info */}
+            <div className="text-center md:text-left flex-grow space-y-6">
+                
+                {/* Meta Tags */}
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 text-sm font-medium">
+                    <span className="flex items-center gap-1 bg-pink-500 text-white px-3 py-1 rounded-lg shadow-lg shadow-pink-500/30">
+                        <Calendar size={14}/> {post.date}
+                    </span>
+                    <span className="flex items-center gap-1 bg-slate-700 text-slate-200 px-3 py-1 rounded-lg border border-slate-600">
+                        <Clock size={14}/> {post.readTime}
+                    </span>
+                </div>
+                
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-cartoony font-bold text-white leading-tight drop-shadow-md">
+                    {post.title}
+                </h1>
+                
+                <div className="flex items-center justify-center md:justify-start gap-4 pt-2">
+                    <div className="w-12 h-12 rounded-full bg-white text-pink-600 flex items-center justify-center font-bold shadow-lg border-2 border-pink-100">
+                        <User size={24} />
+                    </div>
+                    <div className="text-left">
+                        <p className="text-xs text-slate-400 uppercase tracking-wider font-bold">Scritto da</p>
+                        <p className="font-bold text-xl text-white">{post.author}</p>
+                    </div>
+                </div>
             </div>
         </div>
       </div>
@@ -124,23 +154,78 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack }) => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
         <div className="flex flex-col lg:flex-row gap-12">
             
-            {/* Article Body - Uses Tailwind Typography (prose) */}
+            {/* Article Body */}
             <article className="lg:w-3/4">
                 <div 
-                    className="prose prose-lg prose-pink text-slate-600 max-w-none leading-relaxed first-letter:text-5xl first-letter:font-cartoony font-bold first-letter:text-pink-500 first-letter:mr-1 first-letter:float-left"
+                    className="prose prose-lg prose-pink text-slate-600 max-w-none leading-relaxed first-letter:text-5xl first-letter:font-cartoony font-bold first-letter:text-pink-500 first-letter:mr-1 first-letter:float-left mb-12"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
+
+                {/* BOTTOM PROMO SECTION (The "Post-Roll" Ad) */}
+                <div className="bg-gradient-to-br from-pink-50 to-white rounded-[2rem] p-8 border-4 border-white shadow-xl flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-pink-200 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+                    
+                    <div className="flex-grow text-center md:text-left relative z-10">
+                        <span className="inline-block bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider shadow-sm">
+                            Sostieni il Disagio
+                        </span>
+                        <h3 className="text-2xl font-cartoony font-bold text-slate-800 mb-2">Ti è piaciuta la storia?</h3>
+                        <p className="text-slate-600 font-medium">
+                            Portati a casa un pezzo di questo caos. <br/>
+                            Le nostre magliette sono ottime per asciugare le lacrime di disperazione.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto relative z-10">
+                        <button 
+                            onClick={() => onNavigateToCategory(Category.APPAREL)}
+                            className="flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-xl font-bold font-cartoony transition shadow-md hover:shadow-lg hover:-translate-y-1"
+                        >
+                            <ShoppingBag size={20} /> VAI ALLE MAGLIETTE
+                        </button>
+                        <button 
+                            onClick={() => onNavigateToCategory(Category.BOOKS)}
+                            className="flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-xl font-bold font-cartoony transition shadow-md hover:shadow-lg hover:-translate-y-1"
+                        >
+                            <BookOpen size={20} /> VAI AI LIBRI
+                        </button>
+                    </div>
+                </div>
+
             </article>
 
             {/* Sidebar / Share */}
             <aside className="lg:w-1/4 space-y-8">
-                <div className="bg-pink-50 p-6 rounded-3xl border-2 border-pink-100 sticky top-24">
-                    <h3 className="font-cartoony font-bold text-xl text-slate-800 mb-4 flex items-center gap-2">
-                        <Share2 size={20} className="text-pink-500" /> Condividi
+                
+                {/* SHOP PROMO WIDGET (Sidebar) */}
+                <div className="bg-white p-6 rounded-3xl border-4 border-pink-100 shadow-lg text-center">
+                    <h3 className="font-cartoony font-bold text-xl text-slate-800 mb-2">
+                        Shopping Terapeutico
                     </h3>
-                    <p className="text-sm text-slate-500 mb-6">
-                        Diffondi il verbo del disagio ai tuoi amici (o nemici).
+                    <p className="text-xs text-slate-500 mb-6 font-medium">
+                        L'unico modo per sopportare i conigli è comprarne il merchandising.
                     </p>
+                    <div className="space-y-3">
+                         <button 
+                            onClick={() => onNavigateToCategory(Category.APPAREL)}
+                            className="w-full flex items-center justify-center gap-2 bg-pink-100 text-pink-600 hover:bg-pink-500 hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
+                        >
+                            <ShoppingBag size={18} /> Magliette
+                        </button>
+                        <button 
+                            onClick={() => onNavigateToCategory(Category.BOOKS)}
+                            className="w-full flex items-center justify-center gap-2 bg-slate-100 text-slate-600 hover:bg-slate-800 hover:text-white py-3 rounded-xl font-bold transition-all duration-300"
+                        >
+                            <BookOpen size={18} /> Libri
+                        </button>
+                    </div>
+                </div>
+
+                {/* SHARE WIDGET */}
+                <div className="bg-slate-50 p-6 rounded-3xl border-2 border-slate-100 sticky top-24">
+                    <h3 className="font-cartoony font-bold text-xl text-slate-800 mb-4 flex items-center gap-2">
+                        <Share2 size={20} className="text-slate-400" /> Condividi
+                    </h3>
                     
                     <div className="space-y-3">
                         <button 
@@ -171,9 +256,9 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack }) => {
         <div className="mt-16 pt-8 border-t border-slate-100 text-center">
              <button 
                 onClick={onBack}
-                className="px-8 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl transition inline-flex items-center gap-2"
+                className="px-8 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl transition inline-flex items-center gap-2 group"
             >
-                <ArrowLeft size={18} /> Torna all'elenco articoli
+                <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" /> Torna all'elenco articoli
             </button>
         </div>
       </div>
