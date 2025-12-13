@@ -1,4 +1,98 @@
-import { Product, Category } from './types';
+
+import { Product, Category, BlogPost } from './types';
+
+// --- BLOG POSTS (IL DIARIO DEL DISAGIO) ---
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    id: "post-kenny",
+    title: "Hanno ammazzato Kenny! (O di come mi sono vestita da sacco della spazzatura per sopravvivere ai conigli)",
+    date: "13 Dicembre 2025",
+    isoDate: "2025-12-13",
+    author: "Maia N. Fiorelli",
+    readTime: "4 min",
+    imageUrl: "https://i.postimg.cc/LsJ5LzXQ/Maia-impermeabile.jpg", 
+    excerpt: "Siamo andati all'Artigiano in Fiera. Sapete, quella bolgia dantesca dove entri per un salame ed esci con un impermeabile arancione che ti fa sembrare un personaggio di South Park.",
+    content: `
+      <p>Siamo andati all'Artigiano in Fiera. Sapete, quella bolgia dantesca che si tiene ogni dicembre vicino a Milano, dove entri per comprare un salame e esci con un servizio di piatti uzbeki e la convinzione di aver fatto l'affare della vita.</p>
+      <p>Io, però, non cercavo piatti. <strong>Io ho trovato Lui.</strong></p>
+      <p>Un impermeabile. Non un impermeabile qualunque, ma una folgorazione arancione, lucida, prepotente. Mentre pagavo con gli occhi a cuore, Marco mi osservava con quel suo sopracciglio alzato da uomo di lettere che giudica la frivolezza del mondo. «Amore,» mi ha detto con la delicatezza di un elefante in cristalleria, «stai letteralmente pagando per comprare una specie di sacco della spazzatura colorato.»</p>
+      
+      <p>Lui non capisce. Gli uomini non capiscono mai la poesia di un acquisto impulsivo. Nella mia testa, io non ero un rifiuto ambulante. Io mi vedevo già scendere dalla macchina sotto il diluvio universale per andare a fare le visite a domicilio. Immaginavo di suonare ai campanelli dei clienti in una giornata grigia e triste, portando un’esplosione di colore, un raggio di sole sintetico che avrebbe reso gioiosa anche la diagnosi di una dermatite o il rinnovo di un vaccino. "Ecco la dottoressa! È arrivata l'allegria idrorepellente!".</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">La realtà allo specchio</h4>
+      <p>Poi però sono tornata a casa, l'ho provato davanti allo specchio, ho tirato su il cappuccio e ho capito. Marco aveva torto sul sacco della spazzatura, ma io forse avevo esagerato con l'ottimismo cromatico. Non sembravo Mary Poppins. <strong>Sembravo Kenny di South Park.</strong></p>
+      <p>E sapete una cosa? Va benissimo così. Perché se Kenny muore in ogni puntata, io rischio la vita ogni volta che entro nel mio giardino. Chiedetelo a quel bastardo di Logan, il più ingrato dei miei conigli.</p>
+
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">La strategia del colore</h4>
+      <p>E qui veniamo alla vera, geniale, funzione tattica di questo acquisto, quella che giustifica ogni euro speso e zittisce ogni marito scettico.
+      Di che colore è la pipì dei conigli? Chi mi segue lo sa (e chi non lo sa, beato lui): la pipì di coniglio varia dal giallo, all'arancione intenso, fino al rosso sangue. I conigli, essendo notoriamente brutte persone, amano esprimere il loro dissenso – o semplicemente la loro esistenza – innaffiandoti. Se ti vesti di bianco, sei finita. Se ti vesti di nero, si vede la polvere del fieno.</p>
+      
+      <p>Ma se ti vesti di arancione lucido... ah! <strong>Scacco matto!</strong> Questo non è un impermeabile. Questa è una divisa per la guerra chimica. Se un coniglio mi fa pipì addosso su questo tessuto, divento un tutt'uno con l'onta. Sono tinta su tinta. Sono invisibile al degrado.</p>
+      
+      <p>Quindi ridete pure del mio sacco della spazzatura griffato. Quando sarò l'unica a uscire indenne e asciutta da un attacco a sorpresa di Logan, mentre voi sarete lì a smacchiare i jeans, sarò io a ridere. O forse no, perché sembrerò comunque un personaggio dei cartoni animati destinato a una brutta fine. Ma almeno, sarò un personaggio asciutto e coloratissimo.</p>
+      <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">"Hanno ammazzato Maia! Brutti bastardi!"</p>
+    `
+  },
+  {
+    id: "post-blablabla",
+    title: "BlaBlaBla: cronache di un catorcio chiacchierone",
+    date: "13 Dicembre 2025",
+    isoDate: "2025-12-13",
+    author: "Maia N. Fiorelli",
+    readTime: "3 min",
+    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/571283279_845469701392476_8698690387579433516_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j9FF2t5nvtMQ7kNvwHLcX95&_nc_oc=AdlhP2KQDa2gDRANVo2lB5hlVw3Qr8xJ5apDNczL_LaCnCDe4wZv-nmC4meUS3pkZGM&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=ZkWQwHNd0PlGEGv8b2zNOQ&oh=00_AflsrUH6d2wuQA7bqCpFREU-wEEGJ6SyzDeZcNW-tclIUg&oe=6943706D",
+    excerpt: "Ci sono vuoti che vanno riempiti, e non parlo solo di quelli nello stomaco delle Bambine. Parlo del vuoto lasciato da Romeo. Ed è così che è arrivata BlaBlaBla.",
+    content: `
+      <p>Ci sono vuoti che vanno riempiti, e non parlo solo di quelli nello stomaco delle Bambine (le pecore) o del mio bisogno patologico di complicarmi la vita. Parlo del vuoto lasciato da Romeo.</p>
+      <p>Lo scorso gennaio, il nostro oco guerriero, l’indomito Sceriffo del giardino, ci ha lasciati. E siccome la natura aborre il vuoto, ma soprattutto T-Rex aborre la solitudine, ci siamo attivati per trovarle una nuova compagnia.</p>
+      <p>La logica avrebbe suggerito di trovare un bell’esemplare sano, magari un principe azzurro pennuto. Ma ehi, guardatevi intorno: questo è il giardino dei casi disperati. La normalità qui è bandita!</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Benvenuta BlaBlaBla</h4>
+      <p>Ed è così che è arrivata <strong>BlaBlaBla</strong>.</p>
+      <p>Diciamocelo subito, senza girarci attorno: BlaBlaBla non è esattamente un’oca da copertina. Se cercate la bellezza apollinea, avete sbagliato indirizzo.
+      Questa nuova creatura è stata recuperata da una situazione di disagio in cui, povera stella, veniva bullizzata pesantemente dalle altre oche. È stata, per usare un eufemismo, "ghettizzata". Perché? Perché anche nel mondo animale, se sei diverso, le prendi.</p>
+      <p>E BlaBlaBla è diversa forte. Ha dei problemi fisici evidenti: falangi storte che fanno crescere le piume di un’ala al contrario, zoppica vistosamente e, in generale, sembra un puzzle montato da qualcuno che aveva perso le istruzioni.</p>
+      <p class="font-bold italic text-slate-700 my-4">Insomma, un catorcio. Un catorcio DOC.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">La strategia della simpatia</h4>
+      <p>All'inizio ero scettica. T-Rex, dal canto suo, ci ha messo un po' ad accettarla. La guardava dall'alto della sua integrità fisica con quell'aria da matrona severa. Ma BlaBlaBla ha sfoderato la sua arma segreta: la simpatia patetica. Si è messa d'impegno, ha sopportato le prime diffidenze e si è fatta letteralmente in quattro per farsi benvolere.</p>
+      <p>E alla fine, persino il cuore di pietra di T-Rex si è sciolto. Ora sono lì, la regina e il giullare zoppicante, che condividono il prato.</p>
+      
+      <p><strong>Ma perché questo nome ridicolo?</strong></p>
+      <p>Semplice. Questa oca è una gran chiacchierona. Non starnazza nel modo marziale e aggressivo di Romeo. Lei parla. Commenta. Appena sente la presenza umana, attacca bottone. Emette un suono continuo, un sottofondo sonoro che ti accompagna mentre cerchi di non calpestare le solite mine antiuomo lasciate dai conigli.</p>
+      <p>È un suono felice, credo. È il suono di chi, dopo essere stato l'ultimo degli ultimi, bullizzato e messo all'angolo perché "sbagliato", ha trovato finalmente un posto dove avere le piume storte e camminare male non è un difetto, ma solo una caratteristica come un'altra.</p>
+      <p class="bg-pink-50 p-4 rounded-xl mt-4 border-l-4 border-pink-400">Benvenuta nel giardino, BlaBlaBla. Ora fai ufficialmente parte della nostra banda di disadattati. Cerca solo di non farti investire dalle pecore.</p>
+    `
+  },
+  {
+    id: "post-mr-big",
+    title: "Mr. Big: ovvero come un chilo e mezzo di ormoni ha quasi distrutto il giardino",
+    date: "13 Dicembre 2025",
+    isoDate: "2025-12-13",
+    author: "Maia N. Fiorelli",
+    readTime: "3 min",
+    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/568949045_849805024284143_6404322187829837797_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MncBuU5YNUMQ7kNvwG7QwcB&_nc_oc=Adm367IrShAlhgfju95KyIZWi9mDP24QR4oh0cC8_1S1BImeZ0K7bF6HB4nUa9uXPcg&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=BGNCgD6Y52MomjyloLRR0Q&oh=00_AfkpTK2xrmWrwxmMDyMbpkEKAkKN__J6VsavKIa-j0dDww&oe=6942F97F",
+    excerpt: "Storia di un nanetto di un chilo e mezzo con un ego spropositato e di come Tsuki, la coniglia zen, gli ha insegnato l'educazione a suon di botte.",
+    content: `
+      <p>Avete presente quella palletta di pelo bianco e nero che compare nella mia foto sul blog? Quello che sembra guardarmi con adorazione (o forse sta solo calcolando la traiettoria per staccarmi un dito)? Ecco, quello è <strong>Mr. Big</strong>.</p>
+      <p>Il nome, ovviamente, è un omaggio a <em>Sex and the City</em>, ma ammettiamolo: è pura ironia. Mr. Big è un nanetto di un chilo e mezzo scarso. Un concentrato di ego spropositato stipato in un corpo da peluche tascabile.</p>
+      <p>La sua storia inizia come quella di tanti altri "catorci" che finiscono nel mio giardino: dopo anni di galera in una gabbia, i vecchi proprietari hanno deciso di regalargli una vita migliore. "Lo mandiamo in campagna", hanno detto. "Sarà libero", hanno pensato. Poveri illusi. Liberare un coniglio non castrato in un giardino è come lanciare una bomba a mano senza spoletta in un negozio di cristalli e sperare che non si rompa niente.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">L'ormone impazzito</h4>
+      <p>Appena Mr. Big ha toccato l'erba, non ha pensato "Oh, che meraviglia la natura". No. Ha pensato: <em>"Dove sono le femmine?"</em>. Perché il nostro Mr. Big, all'epoca, era integro. E quando dico integro, intendo che ragionava con due sole cose: lo stomaco e quei due piccoli generatori di caos che si portava tra le gambe.</p>
+      <p>La vittima designata? <strong>Tsuki</strong>.</p>
+      <p>Tsuki è una coniglia pacifica, una creatura zen che probabilmente in un'altra vita era un monaco tibetano. Ma Mr. Big non voleva meditare. Mr. Big voleva consumare. Per giorni, questo nanetto erotomane ha perseguitato la povera Tsuki con l'insistenza di uno stalker telefonico e la grazia di un martello pneumatico. La inseguiva ovunque, convinto di essere un dono di Dio all'universo femminile lagomorfo.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">La vendetta zen</h4>
+      <p>E Tsuki? Tsuki ha sopportato. Ha fatto la vaga. Ha provato a spiegargli che "no è no". Poi, come succede alle donne (e alle coniglie) quando la misura è colma, è scattata la violenza.</p>
+      <p>Un bel giorno, stanca di essere l'oggetto del desiderio di quel tappo infoiato, Tsuki si è girata e lo ha corcato di botte. Ma di quelle vere. Il risultato? Mr. Big è finito in infermeria, pesto e ridimensionato nella sua virilità, a meditare sui suoi errori (o più probabilmente a chiedersi perché la coniglia dei suoi sogni fosse diventata Mike Tyson).</p>
+      
+      <p>Abbiamo dovuto rimetterlo in gabbia per curarlo, un passo indietro che sapeva di sconfitta, ma necessario. E lì, mentre le ferite guarivano, abbiamo preso la decisione fatidica. <strong>Zac.</strong> Addio palline, addio manie di grandezza, addio delirio di onnipotenza sessuale.</p>
+      <p>Oggi Mr. Big è un coniglio diverso. O meglio, è sempre un coniglio – e quindi, per definizione, una "brutta persona" pronta a giudicarti – ma almeno ha smesso di molestare Tsuki. La pace dei sensi (imposta chirurgicamente) ha funzionato. Ora vivono insieme in giardino, vanno d'amore e d'accordo. Lui probabilmente crede ancora di essere il re del mondo, e noi gli lasciamo questa illusione.</p>
+      <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">In fondo, in un chilo e mezzo, c'è spazio per un sacco di autostima.</p>
+    `
+  }
+];
 
 export const PRODUCTS: Product[] = [
   // --- LIBRI (BOOKS) ---

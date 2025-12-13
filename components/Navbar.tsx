@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Menu, X, Heart, Gamepad2, Instagram, Facebook } from 'lucide-react';
 
@@ -5,19 +6,21 @@ interface NavbarProps {
   isMobileMenuOpen: boolean;
   setIsMobileMenuOpen: (isOpen: boolean) => void;
   onOpenGame: () => void;
+  onLogoClick: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ 
   isMobileMenuOpen,
   setIsMobileMenuOpen,
-  onOpenGame
+  onOpenGame,
+  onLogoClick
 }) => {
   return (
     <nav className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b-4 border-pink-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer group" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+          <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer group" onClick={onLogoClick}>
             <div className="text-pink-500 transform group-hover:scale-110 transition-transform duration-300">
               <Heart size={32} fill="currentColor" strokeWidth={0} />
             </div>
