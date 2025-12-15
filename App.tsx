@@ -342,7 +342,7 @@ const App: React.FC = () => {
                  <div className="order-1 md:order-2 flex justify-center">
                      <div className="relative w-64 h-64 md:w-80 md:h-80">
                          <div className="absolute inset-0 bg-white rounded-3xl transform rotate-3 shadow-xl border-4 border-pink-100 flex items-center justify-center overflow-hidden">
-                             <img src="https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/562381942_836083578997755_5680181863786713456_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Hf-_gbGb-4UQ7kNvwE0_zjS&_nc_oc=AdlsNf4w4U69J3dRhClsY46Exi1Nw_aw1nBPjqbhdwzPZYAUKBAnvXJFRDCi0Soae4U&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=q_cW363xtixBE82_CGXx1A&oh=00_AfkLpiTE852Tcayftt1G_Muz_C44ffG5TDJxot65bivBZQ&oe=693F773E" alt="Maia Natacha Fiorelli" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                             <img src="https://i.postimg.cc/LsJ5LzXQ/Maia-impermeabile.jpg" alt="Maia Natacha Fiorelli" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                          </div>
                      </div>
                  </div>
