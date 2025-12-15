@@ -11,7 +11,7 @@ import { CookieBanner } from './components/CookieBanner';
 import { Footer } from './components/Footer';
 import { PRODUCTS, BLOG_POSTS } from './constants';
 import { Category, Product, BlogPost } from './types';
-import { Filter, Rabbit, Cat, Dog, Bird, BookOpen, Skull, HeartHandshake, Gamepad2, ShoppingBag, PenTool } from 'lucide-react';
+import { Filter, Rabbit, Cat, Dog, Bird, BookOpen, Skull, HeartHandshake, Gamepad2, ShoppingBag, PenTool, ArrowRight } from 'lucide-react';
 
 const App: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category>(Category.HOME);
@@ -344,17 +344,24 @@ const App: React.FC = () => {
                             <h2 className="text-3xl font-cartoony font-bold text-slate-800 flex items-center gap-3">
                                 <PenTool className="text-pink-500" /> Il Diario del Disagio
                             </h2>
-                            <button 
-                                onClick={() => setSelectedCategory(Category.BLOG)}
-                                className="text-pink-500 font-bold hover:underline"
-                            >
-                                Vedi tutti &rarr;
-                            </button>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                             {filteredBlogPosts.map(post => (
                                 <BlogCard key={post.id} post={post} onClick={handleBlogClick} />
                             ))}
+                        </div>
+
+                        <div className="text-center">
+                             <button 
+                                onClick={() => {
+                                    setSelectedCategory(Category.BLOG);
+                                    setTimeout(() => document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth' }), 100);
+                                }}
+                                className="group relative inline-flex items-center gap-3 bg-white text-pink-600 px-8 py-4 rounded-full font-cartoony font-bold text-xl border-4 border-pink-500 shadow-lg hover:bg-pink-500 hover:text-white hover:shadow-pink-200 transition-all duration-300 transform hover:-translate-y-1"
+                            >
+                                <span>Leggi gli altri articoli del blog</span>
+                                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                            </button>
                         </div>
                     </div>
 

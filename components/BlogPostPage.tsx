@@ -21,14 +21,38 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onNavi
     const previousTitle = document.title;
     document.title = `${post.title} | Roba Bella`;
 
-    // 2. Update Meta Description
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const previousMetaDesc = metaDesc?.getAttribute('content');
-    if (metaDesc) {
-        metaDesc.setAttribute('content', post.excerpt || '');
-    }
+    // 2. Helper function to update meta tags
+    const updateMeta = (name: string, content: string, property: boolean = false) => {
+        const selector = property ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+        let element = document.querySelector(selector);
+        if (!element) {
+            element = document.createElement('meta');
+            if (property) {
+                element.setAttribute('property', name);
+            } else {
+                element.setAttribute('name', name);
+            }
+            document.head.appendChild(element);
+        }
+        element.setAttribute('content', content);
+        return element.getAttribute('content'); // Return old content to restore later if needed
+    };
 
-    // 3. Inject JSON-LD (Structured Data for Google News/Search)
+    // Store original values to restore on unmount (optional, but good practice)
+    const ogTitle = document.querySelector('meta[property="og:title"]')?.getAttribute('content');
+    const ogDesc = document.querySelector('meta[property="og:description"]')?.getAttribute('content');
+    const ogImage = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
+    const description = document.querySelector('meta[name="description"]')?.getAttribute('content');
+
+    // 3. Update Social Meta Tags
+    updateMeta('description', post.excerpt);
+    updateMeta('og:title', post.title, true);
+    updateMeta('og:description', post.excerpt, true);
+    updateMeta('og:image', post.imageUrl, true);
+    updateMeta('og:url', window.location.href, true);
+    updateMeta('og:type', 'article', true);
+
+    // 4. Inject JSON-LD (Structured Data for Google News/Search)
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.textContent = JSON.stringify({
@@ -49,9 +73,12 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onNavi
     // Cleanup when component unmounts
     return () => {
         document.title = previousTitle;
-        if (metaDesc && previousMetaDesc) {
-            metaDesc.setAttribute('content', previousMetaDesc);
-        }
+        // Restore originals (fallback to home metadata)
+        if (ogTitle) updateMeta('og:title', ogTitle, true);
+        if (ogDesc) updateMeta('og:description', ogDesc, true);
+        if (ogImage) updateMeta('og:image', ogImage, true);
+        if (description) updateMeta('description', description);
+        
         if (document.head.contains(script)) {
             document.head.removeChild(script);
         }
@@ -60,15 +87,19 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onNavi
 
   const handleShare = (platform: 'facebook' | 'whatsapp' | 'twitter') => {
     let url = '';
+    // Use the current URL which should include ?post=...
+    const shareUrl = window.location.href; 
+    
     switch (platform) {
       case 'facebook':
-        url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+        // Facebook sharer often ignores JS updates, but we pass the URL explicitly
+        url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
         break;
       case 'whatsapp':
-        url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + currentUrl)}`;
+        url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + ' ' + shareUrl)}`;
         break;
       case 'twitter':
-        url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(currentUrl)}`;
+        url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`;
         break;
     }
     window.open(url, '_blank', 'width=600,height=400');

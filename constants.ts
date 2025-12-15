@@ -4,6 +4,69 @@ import { Product, Category, BlogPost } from './types';
 // --- BLOG POSTS (IL DIARIO DEL DISAGIO) ---
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "post-bosco-bagno",
+    title: "Vivere nel bosco senza bagno? I miei conigli lo fanno da anni (e nessuno chiama gli assistenti sociali)",
+    date: "15 Dicembre 2025",
+    isoDate: "2025-12-15",
+    author: "Maia N. Fiorelli",
+    readTime: "4 min",
+    imageUrl: "https://scontent-mxp1-1.xx.fbcdn.net/v/t39.30808-6/497115556_717636724175775_4435312892779509343_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cxgQd9IJJcgQ7kNvwGZZNMi&_nc_oc=AdlWlKgk49u0-7MgerDnRRG1CXa9TcI5itP9hgM9fv7dlFv4dJT8PZxLrk86fRDbMp0&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&_nc_gid=da0Rt4PgyEufMQ97FoGGYg&oh=00_Afm7CruUEIK_ofA2SRzIYH_rCnN2FpS4mxjpX1DvaSKbhw&oe=69461F36",
+    excerpt: "Il web è in fiamme. Tutti parlano della famiglia 'hippie' in Abruzzo. Io leggo e sorrido. Perché tutto questo scalpore per due umani che decidono di vivere nel disagio? Venite nel mio giardino.",
+    content: `
+      <p>Il web è in fiamme. Non letteralmente, purtroppo – quello risolverebbe il problema del freddo umido che mi entra nelle ossa mentre cerco di convincere Plotone che l'antibiotico non è veleno per topi – ma metaforicamente. Tutti parlano della famiglia "hippie" in Abruzzo.</p>
+      
+      <p>Per chi si fosse perso l'ultima puntata di "Umani che fanno cose strane mentre io cerco di non far morire creature suicide": una coppia anglo-australiana ha deciso di vivere in un casolare sperduto tra i boschi abruzzesi, rifiutando la modernità. Niente luce, niente gas e, orrore degli orrori per il popolo dei social, niente bagno. Apriti cielo. Sono intervenuti gli assistenti sociali, il tribunale dei minori e, ovviamente, il Gran Giurì di Facebook, diviso equamente tra chi grida allo scandalo igienico-sanitario e chi li dipinge come eroi della libertà bucolica che sfidano il sistema.</p>
+      
+      <p>Io leggo e sorrido. Un sorriso amaro, da veterinaria che ha appena estratto un filo d'erba dall'occhio di un cane. Perché tutto questo scalpore per due umani che decidono di vivere nella sporcizia e nel disagio? <strong>Venite nel mio giardino.</strong></p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Rewilding estremo (ovvero: Logan)</h4>
+      <p>Qui, nella "Terra dei Conigli", vige da sempre lo stesso identico regime. Prendete Logan. Lui è il vero pioniere del rewilding estremo. Logan ha a disposizione ripari asciutti, paglia pulita e cibo servito in ciotole di ceramica. Eppure? Eppure sceglie metodicamente di vivere in un tunnel sotterraneo umido, buio e potenzialmente franoso che ha scavato con le sue stesse zampe, rifiutando ogni comfort moderno. Se gli proponessi un bagno piastrellato, probabilmente lo userebbe come latrina pubblica per poi dormirci di fianco, nel fango.</p>
+      
+      <p>La verità è che la "vita nel bosco" piace solo a chi non l'ha mai fatta. O ai conigli. I conigli adorano lo squallore. Logan non ha bisogno di dichiarazioni ideologiche per rifiutare la civiltà. Lui è il rifiuto della civiltà. Quando piove e il giardino diventa una palude, mentre io bestemmio in aramaico cercando di non scivolare nel fango con gli stivali, lui è lì. Immobile. Bagnato fradicio. Con l'aria di chi ti giudica perché hai l'ombrello.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Due pesi, due misure</h4>
+      <p>La differenza tra la famiglia in Abruzzo e i miei lagomorfi è che, quando i conigli decidono di vivere "allo stato brado" e di riempirsi di parassiti, nessuno chiama i servizi sociali. Chiamano me. E io, invece di polemizzare su Facebook, devo armarmi di pazienza, retino e antiparassitario, e andare a salvare questi "eroi della natura" dalle conseguenze delle loro stesse scelte di vita discutibili.</p>
+      
+      <p>Quindi, cari indignati del web, calmatevi. Vivere senza bagno non è una scelta rivoluzionaria. È una scomodità bestiale. Chiedetelo alle mie pecore, Lulù e Spirit, che pur avendo un intero prato a disposizione, preferiscono cagare esattamente sul vialetto di cemento dove devo passare io. Quella non è libertà. È, molto semplicemente, essere delle brutte persone.</p>
+      
+      <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">Ps: Se qualcuno degli assistenti sociali volesse passare di qui, ho un paio di conigli da segnalare per "condotta immorale e vagabondaggio". Citofonare Fiorelli.</p>
+    `
+  },
+  {
+    id: "post-plotone",
+    title: "Dal mondo delle idee a full metal jacket: come un cambio di vocale ha trasformato un coniglio filosofo in spietato dittatore",
+    date: "15 Dicembre 2025",
+    isoDate: "2025-12-15",
+    author: "Maia N. Fiorelli",
+    readTime: "3 min",
+    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/536676595_793063703299743_7859167366248459174_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JBfTAEZ9ZCQQ7kNvwHL5tjL&_nc_oc=Adk9GEn3ita7B8v6egcPCcIg4Mk4KvkkbTTncYqrF_kePGqCePJn85rSyhGW4XY_phM&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=Qnzcn5HlwTHFh9XGAB5nzQ&oh=00_AfkyNalRK8O04ctBWA7Ca4WVT36ykn5b_6_oK4cRITNVeA&oe=69461493",
+    excerpt: "Tutto è iniziato con un nome, o meglio, con un errore burocratico. Doveva chiamarsi Platone... ma la realtà ha deciso di prenderci in giro: benvenuto Plotone.",
+    content: `
+      <p>Tutto è iniziato con un nome, o meglio, con un errore burocratico. Quando il nuovo arrivato è giunto nel nostro giardino, le intenzioni erano nobili, quasi accademiche. Doveva chiamarsi Platone: era quello il nome che gli avevano dato i volontari che se ne prendevano cura. Ci piaceva l’idea di un coniglio saggio, che meditasse sul mondo delle idee mentre sgranocchiava un filo d’erba.</p>
+      
+      <p>Ma, come spesso accade quando si ha a che fare con i lagomorfi, la realtà ha deciso di prenderci in giro. Già al rifugio avevano sbagliato a scriverlo: sul foglio c’era scritto Plutone. E diciamocelo, Plutone è il dio degli inferi, è qualcosa di lugubre, di oscuro. Un presagio, forse? Assolutamente sì.</p>
+      
+      <p>Perché una volta messo piede (o zampa) nel suo nuovo regno, abbiamo capito subito che di filosofico non c’era proprio nulla. E nemmeno di "infernale" nel senso classico. C’era qualcosa di molto più pragmatico e militare.
+      Da un cambio di vocale siamo passati a un cambio di paradigma: <strong>benvenuto Plotone</strong>.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">L’ascesa del regime</h4>
+      <p>Plotone non è un coniglio aggressivo. Per carità, non vorrei mai diffamare la sua immagine pubblica. Diciamo che è... assertivo. Avete presente quei leader che non chiedono il permesso per governare, ma si limitano a occupare il palazzo presidenziale? Ecco.</p>
+      <p>Plotone è giovane, è forte, e ha capito subito come funziona la politica del giardino. In men che non si dica è diventato il Re, instaurando una monarchia assoluta condivisa con la sua consorte, la Regina Eimeria. Insieme, gestiscono il grosso del territorio, godendosi quella libertà che solo i dittatori (e i conigli giovani) sanno apprezzare.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">La geopolitica del giardino (ovvero: dividi et impera)</h4>
+      <p>L’arrivo di Plotone ha costretto a ridisegnare la mappa geopolitica dei nostri spazi verdi. Non c’è più la libera circolazione delle merci e delle palline di cacca. C’è stata una vera e propria compartimentazione:</p>
+      <ul class="list-disc pl-5 space-y-2 text-slate-700 marker:text-pink-500 mb-4">
+        <li><strong>La Svizzera (Zona demilitarizzata)</strong>: Da una parte abbiamo isolato Tsuki e Mr. Big. Loro sono il lato pacifico dei conigli, quelli che guardano il telegiornale e scuotono la testa davanti alla violenza.</li>
+        <li><strong>L’Esilio Dorato</strong>: Dall’altra parte c’è Logan. Lui rappresenta il lato selvaggio, il vecchio guerriero. Ma siccome è anziano, se lo lasciassimo nel mischione, finirebbe male. Logan è separato per il suo bene, perché altrimenti le "nuove leve" come Plotone lo menerebbero senza pietà.</li>
+      </ul>
+      
+      <p>Quindi eccoci qui. Pensavamo di aver adottato un pensatore greco, ci siamo ritrovati con un comandante di plotone che pattuglia i confini con Eimeria al suo fianco.
+      Plotone si gode la sua giovinezza e la sua forza, e noi ci godiamo lo spettacolo di questa nuova tirannia pelosa.</p>
+      
+      <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">Perché, ricordatevelo sempre: i conigli non cercano la democrazia. Cercano il dominio totale. E Plotone, con quel nome lì, non poteva che darci ragione.</p>
+    `
+  },
+  {
     id: "post-kenny",
     title: "Hanno ammazzato Kenny! (O di come mi sono vestita da sacco della spazzatura per sopravvivere ai conigli)",
     date: "13 Dicembre 2025",
