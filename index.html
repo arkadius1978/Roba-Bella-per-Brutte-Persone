@@ -15,16 +15,19 @@
     <meta property="og:url" content="https://www.iconiglisonobruttepersone.it/">
     <meta property="og:title" content="Roba bella per brutte persone | Merch Ufficiale">
     <meta property="og:description" content="Ironia graffiante, conigli dittatori e pecore che mangiano mollette. Tutto il disagio che cercavi, ora stampato su cotone.">
+    
     <!-- 
-       IMPORTANTE: Carica un'immagine chiamata 'preview-social.jpg' (1200x630px) nella cartella principale del tuo sito.
-       Questa è l'immagine che apparirà su Facebook se non riesce a leggere quella specifica dell'articolo.
+       FIX ANTEPRIMA WHATSAPP:
+       Poiché i bot non leggono React, usiamo un'immagine statica sicura (la copertina del libro) 
+       come fallback garantito. Così l'anteprima non sarà mai vuota.
     -->
-    <meta property="og:image" content="https://www.iconiglisonobruttepersone.it/preview-social.jpg">
-    <meta property="og:image:secure_url" content="https://www.iconiglisonobruttepersone.it/preview-social.jpg">
+    <meta property="og:image" content="https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg">
+    <meta property="og:image:secure_url" content="https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Roba Bella per Brutte Persone - Home Page">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="750">
+    <meta property="og:image:alt" content="Roba Bella per Brutte Persone - Copertina">
+    
     <meta property="og:site_name" content="Roba Bella">
     <meta property="og:locale" content="it_IT">
 
@@ -33,12 +36,12 @@
     <meta property="twitter:url" content="https://www.iconiglisonobruttepersone.it/">
     <meta property="twitter:title" content="Roba bella per brutte persone | Merch Ufficiale">
     <meta property="twitter:description" content="Ironia graffiante, conigli dittatori e pecore che mangiano mollette. Tutto il disagio che cercavi, ora stampato su cotone.">
-    <meta property="twitter:image" content="https://www.iconiglisonobruttepersone.it/preview-social.jpg">
+    <meta property="twitter:image" content="https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg">
 
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="Roba bella per brutte persone | Merch Ufficiale">
     <meta itemprop="description" content="Ironia graffiante, conigli dittatori e pecore che mangiano mollette. Tutto il disagio che cercavi, ora stampato su cotone.">
-    <meta itemprop="image" content="https://www.iconiglisonobruttepersone.it/preview-social.jpg">
+    <meta itemprop="image" content="https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg">
 
     <!-- Added typography plugin -->
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
@@ -74,6 +77,7 @@
     "react/": "https://aistudiocdn.com/react@^19.2.1/",
     "react": "https://aistudiocdn.com/react@^19.2.1",
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.22.3",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
   }
 }
