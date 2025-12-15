@@ -10,6 +10,7 @@ import { GameModal } from './components/GameModal';
 import { LegalModal } from './components/LegalModal';
 import { CookieBanner } from './components/CookieBanner';
 import { Footer } from './components/Footer';
+import { SEO } from './components/SEO';
 import { PRODUCTS, BLOG_POSTS } from './constants';
 import { Category, Product, BlogPost } from './types';
 import { Filter, Rabbit, Cat, Dog, Bird, BookOpen, Skull, HeartHandshake, Gamepad2, ShoppingBag, PenTool, ArrowRight } from 'lucide-react';
@@ -18,11 +19,11 @@ import { Filter, Rabbit, Cat, Dog, Bird, BookOpen, Skull, HeartHandshake, Gamepa
 
 const HomeView: React.FC = () => {
     const navigate = useNavigate();
-    // Get latest 3 blog posts
     const latestPosts = BLOG_POSTS.slice(0, 3);
 
     return (
         <>
+            <SEO />
             {/* HERO SECTION (Main Site) */}
             <div className="relative bg-pink-50 py-20 md:py-32 overflow-hidden">
                 <div className="absolute top-10 left-[10%] text-pink-200 animate-bounce delay-100 hidden md:block"><Rabbit size={64} /></div>
@@ -159,6 +160,7 @@ const CatalogView: React.FC<CatalogViewProps> = ({ onProductClick }) => {
 
     return (
         <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full animate-fade-in" id="catalogo">
+             <SEO title="Catalogo | Roba Bella per Brutte Persone" description="Sfoglia il nostro catalogo di magliette, felpe e libri. Tutto il merchandising ufficiale per chi convive con animali dittatori." />
              <div className="flex flex-col items-center mb-12 space-y-6 pt-20">
                 <h2 className="text-4xl font-cartoony font-bold text-slate-800">Catalogo Completo</h2>
                 
@@ -238,6 +240,7 @@ const BlogListView: React.FC = () => {
 
     return (
          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full animate-fade-in pt-32">
+            <SEO title="Diario del Disagio | Il Blog" description="Cronache di vita vissuta tra peli, paglia e giudizi silenziosi. Leggi le storie di Maia Natacha Fiorelli." />
             <div className="text-center mb-12">
                 <h1 className="text-5xl font-cartoony font-bold text-slate-800 mb-4">Diario del Disagio</h1>
                 <p className="text-xl text-slate-500 max-w-2xl mx-auto">Cronache di vita vissuta tra peli, paglia e giudizi silenziosi.</p>
@@ -318,12 +321,6 @@ const App: React.FC = () => {
         {/* Handle old query params redirect if needed, or catch all */}
         <Route path="*" element={<HomeView />} />
       </Routes>
-
-      {/* Author Bio is now only on Home, or we can make it a footer element. For now, keep it on Home inside HomeView or shared footer? 
-          Actually, the original design had it at the bottom of the catalog. Let's add it to Footer or keep it in HomeView/CatalogView.
-          Let's put it in a separate block if we want it global, but usually it's better on Home.
-          I'll add it to HomeView. 
-      */}
 
       {/* Shared Footer Elements */}
       <div className="bg-pink-50 pb-10">

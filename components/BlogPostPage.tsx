@@ -1,7 +1,8 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ArrowLeft, Calendar, User, Clock, Share2, Facebook, Link as LinkIcon, MessageCircle, ShoppingBag, BookOpen } from 'lucide-react';
 import { BlogPost, Category } from '../types';
+import { SEO } from './SEO';
 
 interface BlogPostPageProps {
   post: BlogPost | null;
@@ -15,9 +16,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onNavi
   const currentUrl = typeof window !== 'undefined' ? window.location.href : '';
   const shareText = `Leggi questo articolo: ${post.title}`;
 
-  useEffect(() => {
-    // Basic Client Side Meta Update (Does not affect WhatsApp/Facebook crawlers)
-    document.title = `${post.title} | Roba Bella`;
+  React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [post]);
 
@@ -62,6 +61,13 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onBack, onNavi
 
   return (
     <div className="min-h-screen bg-white animate-fade-in">
+      <SEO 
+        title={`${post.title} | Diario del Disagio`}
+        description={post.excerpt}
+        image={post.imageUrl}
+        type="article"
+      />
+      
       <div className="relative bg-slate-900 overflow-hidden pb-12 pt-24 md:pt-32 px-4 shadow-xl">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <img src={post.imageUrl} className="w-full h-full object-cover opacity-30 blur-2xl scale-110 saturate-150" alt="" aria-hidden="true" />
