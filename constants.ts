@@ -4,6 +4,58 @@ import { Product, Category, BlogPost } from './types';
 // --- BLOG POSTS (IL DIARIO DEL DISAGIO) ---
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "post-natale-albero",
+    title: "Natale: Perché il tuo albero ha i minuti contati",
+    date: "19 Dicembre 2025",
+    isoDate: "2025-12-19",
+    author: "Maia N. Fiorelli",
+    readTime: "3 min",
+    imageUrl: "https://scontent-mxp1-1.xx.fbcdn.net/v/t39.30808-6/594549942_879353974670715_904625935823656876_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QXOv_2571DQQ7kNvwGEO4zS&_nc_oc=Adn8Z1ASKeoNWwt0KBquoNxgDgYg-5SzUabmMJaE9Fu00HXy7_ofehaAjm1DzA3qwVA&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&_nc_gid=qdK8Uafba3GR0Wv9pFrjAQ&oh=00_Afmk2KBDkKz2U_ky473EZmAWHkO3GGgiRm1yzMmvoFQ56Q&oe=694AECC2",
+    excerpt: "Diciamocelo: per noi umani il Natale è luci e regali. Per i nostri coinquilini pelosi è solo un esercizio nuovo con vari gradi di difficoltà.",
+    content: `
+      <p>Diciamocelo: per noi umani il Natale è luci e regali. Per i nostri coinquilini pelosi è solo un esercizio nuovo con vari gradi di difficoltà.</p>
+      
+      <p>Mentre guardo la mia gatta Fiordiluna scalare l’albero come se fosse l’Everest e Dottor Miao osservarla impassibile dal basso, mi dico: "chissà che casino gestire l'abete natalizio quando si hanno conigli in casa".</p>
+      
+      <p>Se il gatto medio è infatti un alpinista che punta alla cima per rovesciare la stella, il coniglio è un ingegnere della demolizione. Non perderebbe tempo a scalarlo. Lo smonterebbe pezzo per pezzo, partendo dalle radici:</p>
+      
+      <ul class="list-disc pl-5 space-y-2 text-slate-700 marker:text-pink-500 mb-4">
+        <li><strong>I cavi delle luci:</strong> Il loro spuntino preferito (un classico "spaghetto" elettrico al gusto di corto circuito).</li>
+        <li><strong>La struttura:</strong> Perché un albero deve cadere, è una questione di principio.</li>
+        <li><strong>Il piedistallo:</strong> rosicchiato con la furia di chi ha una missione.</li>
+      </ul>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Il verdetto della veterinaria</h4>
+      <p>Se pensate di addobbare il territorio dei vostri lagomorfi, sappiate che non state facendo "atmosfera". State solo fornendo materiale da cantiere a dei vandali che non sanno cosa farsene della pace nel mondo. E se poi si fanno male fate anche lavorare me durante le feste!</p>
+      
+      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul tetto di casa.</p>
+    `
+  },
+  {
+    id: "post-conigli-pioggia",
+    title: "Conigli bagnati e altri disastri: cronaca di una giornata di pioggia",
+    date: "19 Dicembre 2025",
+    isoDate: "2025-12-19",
+    author: "Maia N. Fiorelli",
+    readTime: "4 min",
+    imageUrl: "https://i.postimg.cc/mDB70S5j/483509702-669297472343034-2119051174616120937-n.jpg",
+    excerpt: "Nei giorni di pioggia, il mio giardino smette di essere un’oasi bucolica e diventa un girone dantesco umido, dove ogni animale mette in scena il suo personale psicodramma...",
+    content: `
+      <p>Nei giorni di pioggia, il mio giardino smette di essere un’oasi bucolica e diventa un girone dantesco umido, dove ogni animale mette in scena il suo personale psicodramma...</p>
+      
+      <p>Partiamo da Fiordiluna. Il suo hobby è chiedere di uscire, fissare l’acqua che cade con orrore, guardarmi con disprezzo (come se avessi rotto io il cielo) e rientrare. Tempo cinque minuti e resetta la memoria: vuole uscire di nuovo. È un loop infinito di miagolii e pretese.</p>
+      
+      <p>Poi c'è Gea, la cana, maestra del senso di colpa (il nostro). Lei non si limita a non voler uscire; lei mi accusa. Mi guarda con quella faccia da martire, per comunicarmi un solo concetto: "Madre, perché mi fai questo? Se mi amassi, spegneresti l'acqua". Perché La verità è che io mi vestirei anche con il mio bell'impermeabile e la porterai in giro, ma lei non vuole. La pioggia le dà fastidio e così usa le sue accuse silenziose per ingannare il tempo.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">E poi ci sono loro. Le brutte persone.</h4>
+      <p>Mentre le pecore belano indignate dal riparo e le oche se la godono avvolte dalle loro piume impenetrabili, i conigli scelgono la via della psicopatia. Vi aspettereste che cerchino un riparo? Macché. I conigli restano sotto il diluvio. Immobili. Fradici.</p>
+      
+      <p>Con il pelo appiccicato che li fa sembrare degli Ewok usciti male, ti fissano attraverso la pioggia con aria di sfida. Non si lamentano, non cercano conforto. Stanno lì, nel fango, a dimostrarmi che loro sono superiori anche agli agenti atmosferici. Poi, se si ammalano, tocca a me curarli...</p>
+      
+      <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">Quindi, se vi sentite tristi per il maltempo, pensate ai miei conigli: bagnati, brutti e, come sempre, arrabbiati col mondo. Il loro odio è il migliore ombrello.</p>
+    `
+  },
+  {
     id: "post-bosco-bagno",
     title: "Vivere nel bosco senza bagno? I miei conigli lo fanno da anni (e nessuno chiama gli assistenti sociali)",
     date: "15 Dicembre 2025",
@@ -42,7 +94,7 @@ export const BLOG_POSTS: BlogPost[] = [
     imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/536676595_793063703299743_7859167366248459174_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JBfTAEZ9ZCQQ7kNvwHL5tjL&_nc_oc=Adk9GEn3ita7B8v6egcPCcIg4Mk4KvkkbTTncYqrF_kePGqCePJn85rSyhGW4XY_phM&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=Qnzcn5HlwTHFh9XGAB5nzQ&oh=00_AfkyNalRK8O04ctBWA7Ca4WVT36ykn5b_6_oK4cRITNVeA&oe=69461493",
     excerpt: "Tutto è iniziato con un nome, o meglio, con un errore burocratico. Doveva chiamarsi Platone... ma la realtà ha deciso di prenderci in giro: benvenuto Plotone.",
     content: `
-      <p>Tutto è iniziato con un nome, o meglio, con un errore burocratico. Quando il nuovo arrivato è giunto nel nostro giardino, le intenzioni erano nobili, quasi accademiche. Doveva chiamarsi Platone: era quello il nome che gli avevano dato i volontari che se ne prendevano cura. Ci piaceva l’idea di un coniglio saggio, che meditasse sul mondo delle idee mentre sgranocchiava un filo d’erba.</p>
+      <p>Tutto è iniziato con un nome, o meglio, con un errore burocratico. Quando le intenzioni erano nobili, quasi accademiche. Doveva chiamarsi Platone: era quello il nome che gli avevano dato i volontari che se ne prendevano cura. Ci piaceva l’idea di un coniglio saggio, che meditasse sul mondo delle idee mentre sgranocchiava un filo d’erba.</p>
       
       <p>Ma, come spesso accade quando si ha a che fare con i lagomorfi, la realtà ha deciso di prenderci in giro. Già al rifugio avevano sbagliato a scriverlo: sul foglio c’era scritto Plutone. E diciamocelo, Plutone è il dio degli inferi, è qualcosa di lugubre, di oscuro. Un presagio, forse? Assolutamente sì.</p>
       
@@ -151,7 +203,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Un bel giorno, stanca di essere l'oggetto del desiderio di quel tappo infoiato, Tsuki si è girata e lo ha corcato di botte. Ma di quelle vere. Il risultato? Mr. Big è finito in infermeria, pesto e ridimensionato nella sua virilità, a meditare sui suoi errori (o più probabilmente a chiedersi perché la coniglia dei suoi sogni fosse diventata Mike Tyson).</p>
       
       <p>Abbiamo dovuto rimetterlo in gabbia per curarlo, un passo indietro che sapeva di sconfitta, ma necessario. E lì, mentre le ferite guarivano, abbiamo preso la decisione fatidica. <strong>Zac.</strong> Addio palline, addio manie di grandezza, addio delirio di onnipotenza sessuale.</p>
-      <p>Oggi Mr. Big è un coniglio diverso. O meglio, è sempre un coniglio – e quindi, per definizione, una "brutta persona" pronta a giudicarti – ma almeno ha smesso di molestare Tsuki. La pace dei sensi (imposta chirurgicamente) ha funzionato. Ora vivono insieme in giardino, vanno d'amore e d'accordo. Lui probabilmente crede ancora di essere il re del mondo, e noi gli lasciamo questa illusione.</p>
+      <p>Oggi Mr. Big è un coniglio diverso. O meglio, è sempre un coniglio – e quindi, per definitione, una "brutta persona" pronta a giudicarti – ma almeno ha smesso di molestare Tsuki. La pace dei sensi (imposta chirurgicamente) ha funzionato. Ora vivono insieme in giardino, vanno d'amore e d'accordo. Lui probabilmente crede ancora di essere il re del mondo, e noi gli lasciamo questa illusione.</p>
       <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">In fondo, in un chilo e mezzo, c'è spazio per un sacco di autostima.</p>
     `
   }
@@ -538,7 +590,7 @@ export const PRODUCTS: Product[] = [
     isBestSeller: false
   },
 
-  // --- ALTRI ANIMALI (OTHERS -> APPAREL) ---
+  // --- RICCI (APPAREL) ---
   {
     id: "auto-7ck3x2",
     title: "Riccio Brutta Gente - Raglan",
@@ -570,7 +622,7 @@ export const PRODUCTS: Product[] = [
     isBestSeller: false
   },
   
-  // --- ALTRI (RABBITS/GENERAL -> APPAREL) ---
+  // --- ALTRI (APPAREL) ---
   {
     id: "auto-ukhf4q",
     title: "I Love Animals - Canotta",
