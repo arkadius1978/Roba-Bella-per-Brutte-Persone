@@ -52,7 +52,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Il verdetto della veterinaria</h4>
       <p>Se pensate di addobbare il territorio dei vostri lagomorfi, sappiate che non state facendo "atmosfera". State solo fornendo materiale da cantiere a dei vandali che non sanno cosa farsene della pace nel mondo. E se poi si fanno male fate anche lavorare me durante le feste!</p>
       
-      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul telto di casa.</p>
+      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul tetto di casa.</p>
     `
   },
   {
@@ -126,7 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
       Da un cambio di vocale siamo passati a un cambio di paradigma: <strong>benvenuto Plotone</strong>.</p>
       
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">L’ascesa del regime</h4>
-      <p>Plotone non è un coniglio aggressivo. Per carità, non vorrei mai diffamare la sua immagine pubblica. Diciamowe che è... assertivo. Avete presente quei leader che non chiedono il permesso per governare, ma si limitano a occupare il palazzo presidenziale? Ecco.</p>
+      <p>Plotone non è un coniglio aggressivo. Per carità, non vorrei mai diffamare la sua immagine pubblica. Diciamo che è... assertivo. Avete presente quei leader che non chiedono il permesso per governare, ma si limitano a occupare il palazzo presidenziale? Ecco.</p>
       <p>Plotone è giovane, è forte, e ha capito subito come funziona la politica del giardino. In men che non si dica è diventato il Re, instaurando una monarchia assoluta condivisa con la sua consorte, la Regina Eimeria. Insieme, gestiscono il grosso del territorio, godendosi quella libertà che solo i dittatori (e i conigli giovani) sanno apprezzare.</p>
       
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">La geopolitica del giardino (ovvero: dividi et impera)</h4>
@@ -184,4 +184,138 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
       <p>Ci sono vuoti che vanno riempiti, e non parlo solo di quelli nello stomaco delle Bambine (le pecore) o del mio bisogno patologico di complicarmi la vita. Parlo del vuoto lasciato da Romeo.</p>
       <p>Lo scorso gennaio, il nostro oco guerriero, l’indomito Sceriffo del giardino, ci ha lasciati. E siccome la natura aborre il vuoto, ma soprattutto T-Rex aborre la solitudine, ci siamo attivati per trovarle una nuova compagnia.</p>
-      <p>La log
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Benvenuta BlaBlaBla</h4>
+      <p>Ed è così che è arrivata <strong>BlaBlaBla</strong>.</p>
+      <p>Diciamocelo subito, senza girarci attorno: BlaBlaBla non è esattamente un’oca da copertina. Se cercate la bellezza apollinea, avete sbagliato indirizzo. Questa nuova creatura è stata recuperata da una situazione di disagio in cui, povera stella, veniva bullizzata pesantemente dalle altre oche. È stata, per usare un eufemismo, "ghettizzata". Perché? Perché anche nel mondo animale, se sei diverso, le prendi.</p>
+      
+      <p>E BlaBlaBla è diversa forte. Ha dei problemi fisici evidenti: falangi storte che fanno crescere le piume di un’ala al contrario, zoppica vistosamente e, in generale, sembra un puzzle montato da qualcuno che aveva perso le istruzioni. <span class="font-bold italic">Insomma, un catorcio. Un catorcio DOC.</span></p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">La strategia della simpatia</h4>
+      <p>All'inizio ero scettica. T-Rex, dal canto suo, ci ha messo un po' ad accettarla. La guardava dall'alto della sua integrità fisica con quell'aria da matrona severa. Ma BlaBlaBla ha sfoderato la sua arma segreta: la simpatia patetica. Si è messa d'impegno, ha sopportato le prime diffidenze e si è fatta letteralmente in quattro per farsi benvolere.</p>
+      <p>E alla fine, persino il cuore di pietra di T-Rex si è sciolto. Ora sono lì, la regina e il giullare zoppicante, che condividono il prato.</p>
+      
+      <p><strong>Ma perché questo nome ridicolo?</strong> Semplice. Questa oca è una gran chiacchierona. Non starnazza nel modo marziale e aggressivo di Romeo. Lei parla. Commenta. Appena sente la presenza umana, attacca bottone. Emette un suono continuo, un sottofondo sonoro che ti accompagna mentre cerchi di non calpestare le solite mine antiuomo lasciate dai conigli.</p>
+      <p class="bg-pink-50 p-4 rounded-xl mt-4 border-l-4 border-pink-400">Benvenuta nel giardino, BlaBlaBla. Ora fai ufficialmente parte della nostra banda di disadattati. Cerca solo di non farti investire dalle pecore.</p>
+    `
+  },
+  {
+    id: "post-mr-big",
+    title: "Mr. Big: ovvero come un chilo e mezzo di ormoni ha quasi distrutto il giardino",
+    date: "13 Dicembre 2025",
+    isoDate: "2025-12-13",
+    author: "Maia N. Fiorelli",
+    readTime: "3 min",
+    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/568949045_849805024284143_6404322187829837797_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MncBuU5YNUMQ7kNvwG7QwcB&_nc_oc=Adm367IrShAlhgfju95KyIZWi9mDP24QR4oh0cC8_1S1BImeZ0K7bF6HB4nUa9uXPcg&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=BGNCgD6Y52MomjyloLRR0Q&oh=00_AfkpTK2xrmWrwxmMDyMbpkEKAkKN__J6VsavKIa-j0dDww&oe=6942F97F",
+    excerpt: "Storia di un nanetto di un chilo e mezzo con un ego spropositato e di come Tsuki, la coniglia zen, gli ha insegnato l'educazione a suon di botte.",
+    content: `
+      <p>Avete presente quella palletta di pelo bianco e nero che compare nella mia foto sul blog? Quello che sembra guardarmi con adorazione (o forse sta solo calcolando la traiettoria per staccarmi un dito)? Ecco, quello è <strong>Mr. Big</strong>.</p>
+      <p>Il nome, ovviamente, è un omaggio a <em>Sex and the City</em>, ma ammettiamolo: è pura ironia. Mr. Big è un nanetto di un chilo e mezzo scarso. Un concentrato di ego spropositato stipato in un corpo da peluche tascabile.</p>
+      <p>La sua storia inizia come quella di tanti altri "catorci" che finiscono nel mio giardino: dopo anni di galera in una gabbia, i vecchi proprietari hanno deciso di regalargli una vita migliore. "Lo mandiamo in campagna", hanno detto. "Sarà libero", hanno pensato. Poveri illusi.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">L'ormone impazzito</h4>
+      <p>Appena Mr. Big ha toccato l'erba, non ha pensato "Oh, che meraviglia la natura". No. Ha pensato: <em>"Dove sono le femmine?"</em>. Perché il nostro Mr. Big, all'epoca, era integro. E quando dico integro, intendo che ragionava con due sole cose: lo stomaco e quei due piccoli generatori di caos che si portava tra le gambe.</p>
+      <p>La vittima designata? <strong>Tsuki</strong>. Tsuki è una coniglia pacifica, una creatura zen che probabilmente in un'altra vita era un monaco tibetano. Ma Mr. Big non voleva meditare. Mr. Big voleva consumare. Per giorni, questo nanetto erotomane ha perseguitato la povera Tsuki con l'insistenza di uno stalker telefonico e la grazia di un martello pneumatico.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">La vendetta zen</h4>
+      <p>Un bel giorno, stanca di essere l'oggetto del desiderio di quel tappo infoiato, Tsuki si è girata e lo ha corcato di botte. Ma di quelle vere. Il risultato? Mr. Big è finito in infermeria, pesto e ridimensionato nella sua virilità. Abbiammo dovuto rimetterlo in gabbia per curarlo, un passo indietro che sapeva di sconfitta, ma necessario. E lì, mentre le ferite guarivano, abbiamo preso la decisione fatidica. <strong>Zac.</strong> Addio palline, addio manie di grandezza, addio delirio di onnipotenza sessuale.</p>
+      <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">Oggi Mr. Big è un coniglio diverso. O meglio, è sempre un coniglio – e quindi, per definitione, una "brutta persona" – ma almeno ha smesso di molestare Tsuki. La pace dei sensi (imposta chirurgicamente) ha funzionato.</p>
+    `
+  }
+];
+
+export const PRODUCTS: Product[] = [
+  // --- LIBRI (BOOKS) ---
+  {
+    id: "book-brutte-persone",
+    title: "I Conigli sono brutte persone",
+    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/614kEQFvLKL.jpg",
+    amazonUrl: "https://www.amazon.it/I-conigli-sono-brutte-persone/dp/B09Y2MNYYZ",
+    category: Category.BOOKS,
+    description: "Una veterinaria con l’impulso adottivo, una trentina di animali, un marito paziente... Il libro è costruito come un diario divertente sulla convivenza tra bipedi, quadrupedi, pelosi e pennuti. Storie di cani, gatti, galline, oche, pecore e conigli trattate con frizzante ironia, ma anche ricordi del passato e riflessioni profonde sul dolore, la vita e la morte. I conigli sono brutte persone è un romanzo coinvolgente che si legge in un lampo!",
+    quote: "La bibbia del disagio lagomorfo.",
+    isBestSeller: true
+  },
+  {
+    id: "book-cura-coniglio",
+    title: "Come prendersi cura di un coniglio senza finire in analisi",
+    imageUrl: "https://images-eu.ssl-images-amazon.com/images/I/61TxS+SAfgL.jpg",
+    amazonUrl: "https://www.amazon.it/prendersi-coniglio-senza-finire-analisi/dp/B0BW3BJYLH",
+    category: Category.BOOKS,
+    description: "In questo libro troverai molti suggerimenti utili per la cura del tuo coniglio. Si tratta di un manuale divertente scritto in chiave ironica, ma che prende sul serio l'argomento. Scritto da una veterinaria appassionata di animali da compagnia e innamorata dei conigli, diventerà una piacevole lettura per imparare l'arte della cura dei conigli per una adozione consapevole.",
+    quote: "Perché il coniglio è carino, ma ti manda dallo psicologo.",
+    isBestSeller: false
+  },
+  {
+    id: "book-tutta-questa",
+    title: "Tutta questa brutta gente",
+    imageUrl: "https://m.media-amazon.com/images/I/618ALZYIHpL.jpg",
+    amazonUrl: "https://www.amazon.it/Tutta-questa-brutta-Natacha-Fiorelli/dp/B0C9SP2SWH",
+    category: Category.BOOKS,
+    description: "Tra cani, gatti, pecore, oche e galline, i conigli la fanno da padrone nelle preoccupazioni della nostra protagonista: una veterinaria che ce la mette tutta a mantenere l’armonia in giardino, tenendo conto della natura di ognuno. È proprio su questo punto che il libro si fa introspettivo e gli animali diventano un mezzo per riflettere, per non snaturare e non snaturarsi. Un libro divertente, ironico e dal ritmo incalzante che si legge in un baleno!",
+    quote: "Non siamo soli nel disagio.",
+    isBestSeller: false
+  },
+
+  // --- ROBA DA INDOSSARE (APPAREL) ---
+  {
+    id: "auto-auzdxy",
+    title: "Bunny Dad - T-Shirt",
+    imageUrl: "https://m.media-amazon.com/images/I/712BRDQVF4L.jpg",
+    amazonUrl: "https://www.amazon.it/Brutte-persone-Bunny-Dad-Maglietta/dp/B0CX23F231/ref=sr_1_3",
+    category: Category.APPAREL,
+    description: "Per il papà di coniglio che finge di comandare, ma in realtà esegue solo gli ordini.",
+    quote: "Sono un Bunny Dad. La mia autorità è puramente decorativa.",
+    isBestSeller: true
+  },
+  {
+    id: "auto-xhghkf",
+    title: "Rebel Bunny - Maglietta Donna",
+    imageUrl: "https://m.media-amazon.com/images/I/61D+gqUauJL.jpg",
+    amazonUrl: "https://www.amazon.it/Donna-Rebel-orecchie-coniglio-Maglietta/dp/B0CXKMPVP7/ref=sr_1_4",
+    category: Category.APPAREL,
+    description: "Per le coniglie ribelli e le loro umane che non seguono le regole (tranne quelle del coniglio).",
+    quote: "Ribelle, soffice e letale.",
+    isBestSeller: false
+  },
+  {
+    id: "auto-fluhst",
+    title: "Bunny Mum - Hoodie",
+    imageUrl: "https://m.media-amazon.com/images/I/81-lHWQskbL.jpg",
+    amazonUrl: "https://www.amazon.it/Bunny-mum-Felpa-Cappuccio/dp/B0CX25SBM8/ref=sr_1_21",
+    category: Category.APPAREL,
+    description: "La divisa ufficiale della mamma coniglio. Tasca anteriore utile per nascondere premietti.",
+    quote: "Bunny Mum: titolo nobiliare acquisito sul campo.",
+    isBestSeller: true
+  },
+  {
+    id: "auto-1xlic3",
+    title: "Bunny Mum - T-Shirt",
+    imageUrl: "https://m.media-amazon.com/images/I/71kPCxFdi6L.jpg",
+    amazonUrl: "https://www.amazon.it/Brutte-persone-Bunny-mum-Maglietta/dp/B0CX242W4N/ref=sr_1_27",
+    category: Category.APPAREL,
+    description: "Il capo base. Se ne hai uno, ti serve questa.",
+    quote: "",
+    isBestSeller: true
+  },
+  {
+    id: "auto-gbq7zh",
+    title: "I Conigli Sono Brutte Persone - T-Shirt",
+    imageUrl: "https://m.media-amazon.com/images/I/61PVA-QZTuL.jpg",
+    amazonUrl: "https://www.amazon.it/conigli-sono-brutte-persone-Maglietta/dp/B0C3MFYC35/ref=sr_1_100",
+    category: Category.APPAREL,
+    description: "Cotone di qualità superiore per verità scomode superiori.",
+    quote: "",
+    isBestSeller: false
+  },
+  {
+    id: "auto-ou18ps",
+    title: "Il Capo Sono Io - Cane Stiloso",
+    imageUrl: "https://m.media-amazon.com/images/I/61nYdnH7zKL.jpg",
+    amazonUrl: "https://www.amazon.it/Capo-Sono-Cane-Stiloso-Maglietta/dp/B0CW619YKV/ref=rvi_d_sccl_4/257-6552221-1599542",
+    category: Category.APPAREL,
+    description: "Per cani con autostima e proprietari consapevoli del loro ruolo subordinato.",
+    quote: "Cane stiloso, padrone orgoglioso.",
+    isBestSeller: false
+  }
+];
