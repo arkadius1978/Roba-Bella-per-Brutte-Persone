@@ -10,7 +10,7 @@ export const BLOG_POSTS: BlogPost[] = [
     isoDate: "2025-12-28",
     author: "Maia N. Fiorelli",
     readTime: "3 min",
-    imageUrl: "https://i.postimg.cc/qNpgQpW3/unnamed-(1).jpg",
+    imageUrl: "https://i.postimg.cc/JyZrWvwX/Capodanno.png",
     excerpt: "Siamo fatti così, amiamo le tradizioni un po' stupide, specialmente quelle che implicano fare un baccano infernale. Ma per i nostri animali è l'inferno.",
     content: `
       <p>Siamo fatti così, amiamo le tradizioni un po' stupide, specialmente quelle che implicano fare un baccano infernale. I botti ci piacciono: sono colorati, rumorosi e soddisfano quel nostro lato infantile e vagamente idiota.</p>
@@ -52,7 +52,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Il verdetto della veterinaria</h4>
       <p>Se pensate di addobbare il territorio dei vostri lagomorfi, sappiate che non state facendo "atmosfera". State solo fornendo materiale da cantiere a dei vandali che non sanno cosa farsene della pace nel mondo. E se poi si fanno male fate anche lavorare me durante le feste!</p>
       
-      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul telto di casa.</p>
+      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul tetto di casa.</p>
     `
   },
   {
@@ -96,7 +96,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Io leggo e sorrido. Un sorriso amaro, da veterinaria che ha appena estratto un filo d'erba dall'occhio di un cane. Perché tutto questo scalpore per due umani che decidono di vivere nella sporcizia e nel disagio? <strong>Venite nel mio giardino.</strong></p>
       
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Rewilding estremo (ovvero: Logan)</h4>
-      <p>Qui, nella "Terra dei Conigli", vige da sempre lo stesso identico regime. Prendete Logan. Lui è il vero pioniere del rewilding estremo. Logan ha a disposizione ripari asciutti, paglia pulita e cibo servito in ciotole di ceramica. Eppure? Eppure sceglie metodicamente di vivere in un tunnel sotterraneo umido, buio e potenzialmente franoso che ha scavato con le sue stesse zampe, rifiutando ogni comfort moderno. Se gli proponessi un bagno piastrellato, probabilmente lo userebbe come latrina pubblica per poi dormirci di fianco, nel fango.</p>
+      <p>Qui, nella "Terra dei Conigli", vige da sempre lo stesso identico regime. Prendete Logan. Lui è the vero pioniere del rewilding estremo. Logan ha a disposizione ripari asciutti, paglia pulita e cibo servito in ciotole di ceramica. Eppure? Eppure sceglie metodicamente di vivere in un tunnel sotterraneo umido, buio e potenzialmente franoso che ha scavato con le sue stesse zampe, rifiutando ogni comfort moderno. Se gli proponessi un bagno piastrellato, probabilmente lo userebbe come latrina pubblica per poi dormirci di fianco, nel fango.</p>
       
       <p>La verità è che la "vita nel bosco" piace solo a chi non l'ha mai fatta. O ai conigli. I conigli adorano lo squallore. Logan non ha bisogno di dichiarazioni ideologiche per rifiutare la civiltà. Lui è il rifiuto della civiltà. Quando piove e il giardino diventa una palude, mentre io bestemmio in aramaico cercando di non scivolare nel fango con gli stivali, lui è lì. Immobile. Bagnato fradicio. Con l'aria di chi ti giudica perché hai l'ombrello.</p>
       
@@ -166,7 +166,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>E qui veniamo alla vera, geniale, funzione tattica di questo acquisto, quella che giustifica ogni euro speso e zittisce ogni marito scettico.
       Di che colore è la pipì dei conigli? Chi mi segue lo sa (e chi non lo sa, beato lui): la pipì di coniglio varia dal giallo, all'arancione intenso, fino al rosso sangue. I conigli, essendo notoriamente brutte persone, amano esprimere il loro dissenso – o semplicemente la loro esistenza – innaffiandoti. Se ti vesti di bianco, sei finita. Se ti vesti di nero, si vede la polvere del fieno.</p>
       
-      <p>Ma se ti vesti di arancione lucido... ah! <strong>Scacco matto!</strong> Questo non è un impermeabile. Questa è una divisa per la guerra chimica. Se un coniglio mi fa pipì addosso su questo tessuto, divento un tutt'uno con l'onta. Sono tinta su tinta. Sono invisibile al degrado.</p>
+      <p>Ma si ti vesti di arancione lucido... ah! <strong>Scacco matto!</strong> Questo non è un impermeabile. Questa è una divisa per la guerra chimica. Se un coniglio mi fa pipì addosso su questo tessuto, divento un tutt'uno con l'onta. Sono tinta su tinta. Sono invisibile al degrado.</p>
       
       <p>Quindi ridete pure del mio sacco della spazzatura griffato. Quando sarò l'unica a uscire indenne e asciutta da un attacco a sorpresa di Logan, mentre voi sarete lì a smacchiare i jeans, sarò io a ridere. O forse no, perché sembrerò comunque un personaggio dei cartoni animati destinato a una brutta fine. Ma almeno, sarò un personaggio asciutto e coloratissimo.</p>
       <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">"Hanno ammazzato Maia! Brutti bastardi!"</p>
