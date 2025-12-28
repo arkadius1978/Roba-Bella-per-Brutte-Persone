@@ -10,7 +10,7 @@ export const BLOG_POSTS: BlogPost[] = [
     isoDate: "2025-12-28",
     author: "Maia N. Fiorelli",
     readTime: "3 min",
-    imageUrl: "https://i.postimg.cc/SJTjfpQG/unnamed.jpg",
+    imageUrl: "https://i.postimg.cc/qNpgQpW3/unnamed-(1).jpg",
     excerpt: "Siamo fatti così, amiamo le tradizioni un po' stupide, specialmente quelle che implicano fare un baccano infernale. Ma per i nostri animali è l'inferno.",
     content: `
       <p>Siamo fatti così, amiamo le tradizioni un po' stupide, specialmente quelle che implicano fare un baccano infernale. I botti ci piacciono: sono colorati, rumorosi e soddisfano quel nostro lato infantile e vagamente idiota.</p>
@@ -52,7 +52,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Il verdetto della veterinaria</h4>
       <p>Se pensate di addobbare il territorio dei vostri lagomorfi, sappiate che non state facendo "atmosfera". State solo fornendo materiale da cantiere a dei vandali che non sanno cosa farsene della pace nel mondo. E se poi si fanno male fate anche lavorare me durante le feste!</p>
       
-      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul tetto di casa.</p>
+      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul telto di casa.</p>
     `
   },
   {
@@ -74,7 +74,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">E poi ci sono loro. Le brutte persone.</h4>
       <p>Mentre le pecore belano indignate dal riparo e le oche se la godono avvolte dalle loro piume impenetrabili, i conigli scelgono la via della psicopatia. Vi aspettereste che cerchino un riparo? Macché. I conigli restano sotto il diluvio. Immobili. Fradici.</p>
       
-      <p>Con il pelo appiccicato che li fa sembrare degli Ewok usciti male, ti fissano attraverso la pioggia con aria di sfida. Non si lamentano, non cercano conforto. Stanno lì, nel fango, a dimostrarmi che loro sono superiori anche agli agenti atmosferici. Poi, se si ammalano, tocca a me curarli...</p>
+      <p>Con il pelo appiccicato che li fa sembrare degli Ewok usciti male, ti fissano attraverso la pioggia con aria di sfida. Non si lamentano, non cercare conforto. Stanno lì, nel fango, a dimostrarmi che loro sono superiori anche agli agenti atmosferici. Poi, se si ammalano, tocca a me curarli...</p>
       
       <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">Quindi, se vi sentite tristi per il maltempo, pensate ai miei conigli: bagnati, brutti e, come sempre, arrabbiati col mondo. Il loro odio è il migliore ombrello.</p>
     `
