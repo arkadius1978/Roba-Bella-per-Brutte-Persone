@@ -4,6 +4,33 @@ import { Product, Category, BlogPost } from './types';
 // --- BLOG POSTS (IL DIARIO DEL DISAGIO) ---
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "post-trump-groenlandia",
+    title: "Trump, la Groenlandia e il progetto conigli",
+    date: "21 Gennaio 2026",
+    isoDate: "2026-01-21",
+    author: "Maia N. Fiorelli",
+    readTime: "3 min",
+    imageUrl: "https://i.postimg.cc/qBnjjs3D/Born-to-kill.jpg",
+    excerpt: "Vi dico un segreto. Donald Trump non vuole la Groenlandia per le terre rare, ma per un motivo veramente folle: gestire un inserimento di conigli.",
+    content: `
+      <p>Vi dico un segreto. Donald Trump non vuole la Groenlandia per le terre rare, ma per un motivo veramente folle: è l’unico recinto abbastanza grande per gestire un inserimento di conigli che non finisca in un bagno di sangue.</p>
+      
+      <p>La verità è che The Donald ha capito il potenziale bellico di queste creature e sta creandosi un esercito privato. Prima però deve evitare che si ammazzino tra di loro.</p>
+      
+      <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Le basi strategiche del piano</h4>
+      <p>Va detto che il piano ha basi solide:</p>
+      <ul class="list-disc pl-5 space-y-2 text-slate-700 marker:text-pink-500 mb-4">
+        <li><strong>Zero cavi elettrici:</strong> In Groenlandia non c'è roba simile a portata di denti. Puoi lasciare un coniglio libero senza che faccia saltare la corrente a tre stati.</li>
+        <li><strong>Spazio Vitale:</strong> Due milioni di chilometri quadrati di spazio per correre. Finalmente un posto dove sprintare senza senso non finisce con un trauma cranico contro lo spigolo del cancello.</li>
+        <li><strong>Mimetismo perfetto:</strong> Un esercito di mangiamorte bianchi nascosti nella neve. L’arma definitiva.</li>
+      </ul>
+      
+      <p>Trump sta provando a fare un "acquisto" che in realtà è un inserimento forzato su vasta scala. Come vedete è più pericoloso di quel che sembra…</p>
+      
+      <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">Nessuno è al sicuro quando i conigli hanno un intero continente a disposizione.</p>
+    `
+  },
+  {
     id: "post-capodanno-botti",
     title: "Capodanno col botto ma possibilmente senza botti.",
     date: "28 Dicembre 2025",
@@ -34,7 +61,7 @@ export const BLOG_POSTS: BlogPost[] = [
     isoDate: "2025-12-19",
     author: "Maia N. Fiorelli",
     readTime: "3 min",
-    imageUrl: "https://scontent-mxp1-1.xx.fbcdn.net/v/t39.30808-6/594549942_879353974670715_904625935823656876_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QXOv_2571DQQ7kNvwGEO4zS&_nc_oc=Adn8Z1ASKeoNWwt0KBquoNxgDgYg-5SzUabmMJaE9Fu00HXy7_ofehaAjm1DzA3qwVA&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&_nc_gid=qdK8Uafba3GR0Wv9pFrjAQ&oh=00_Afmk2KBDkKz2U_ky473EZmAWHkO3GGgiRm1yzMmvoFQ56Q&oe=694AECC2",
+    imageUrl: "https://i.postimg.cc/ZYcJBdqS/594549942-879353974670715-904625935823656876-n.jpg",
     excerpt: "Diciamocelo: per noi umani il Natale è luci e regali. Per i nostri coinquilini pelosi è solo un esercizio nuovo con vari gradi di difficoltà.",
     content: `
       <p>Diciamocelo: per noi umani il Natale è luci e regali. Per i nostri coinquilini pelosi è solo un esercizio nuovo con vari gradi di difficoltà.</p>
@@ -52,7 +79,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Il verdetto della veterinaria</h4>
       <p>Se pensate di addobbare il territorio dei vostri lagomorfi, sappiate che non state facendo "atmosfera". State solo fornendo materiale da cantiere a dei vandali che non sanno cosa farsene della pace nel mondo. E se poi si fanno male fate anche lavorare me durante le feste!</p>
       
-      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul tetto di casa.</p>
+      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul telto di casa.</p>
     `
   },
   {
@@ -179,7 +206,7 @@ export const BLOG_POSTS: BlogPost[] = [
     isoDate: "2025-12-13",
     author: "Maia N. Fiorelli",
     readTime: "3 min",
-    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/571283279_845469701392476_8698690387579433516_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j9FF2t5nvtMQ7kNvwHLcX95&_nc_oc=AdlhP2KQDa2gDRANVo2lB5hlVw3Qr8xJ5apDNczL_LaCnCDe4wZv-nmC4meUS3pkZGM&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=ZkWQwHNd0PlGEGv8b2zNOQ&oh=00_AflsrUH6d2wuQA7bqCpFREU-wEEGJ6SyzDeZcNW-tclIUg&oe=6943706D",
+    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/571283279_845469701392476_8698690387579433516_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j9FF2t5nvtMQ7kNvwHLcX95&_nc_oc=AdlhP2KQDa2gDRANVo2lB5hlVw3Qr8xJ5apDNczL_LaCnCDe4wZv-nmC4meUS3pkZGM&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=ZkWQwHNd0PlGEGv8b2?NOQ&oh=00_AflsrUH6d2wuQA7bqCpFREU-wEEGJ6SyzDeZcNW-tclIUg&oe=6943706D",
     excerpt: "Ci sono vuoti che vanno riempiti, e non parlo solo di quelli nello stomaco delle Bambine. Parlo del vuoto lasciato da Romeo. Ed è così che è arrivata BlaBlaBla.",
     content: `
       <p>Ci sono vuoti che vanno riempiti, e non parlo solo di quelli nello stomaco delle Bambine (le pecore) o del mio bisogno patologico di complicarmi la vita. Parlo del vuoto lasciato da Romeo.</p>
@@ -209,7 +236,7 @@ export const BLOG_POSTS: BlogPost[] = [
     imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/568949045_849805024284143_6404322187829837797_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MncBuU5YNUMQ7kNvwG7QwcB&_nc_oc=Adm367IrShAlhgfju95KyIZWi9mDP24QR4oh0cC8_1S1BImeZ0K7bF6HB4nUa9uXPcg&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=BGNCgD6Y52MomjyloLRR0Q&oh=00_AfkpTK2xrmWrwxmMDyMbpkEKAkKN__J6VsavKIa-j0dDww&oe=6942F97F",
     excerpt: "Storia di un nanetto di un chilo e mezzo con un ego spropositato e di come Tsuki, la coniglia zen, gli ha insegnato l'educazione a suon di botte.",
     content: `
-      <p>Avete presente quella palletta di pelo bianco e nero che compare nella mia foto sul blog? Quello che sembra guardarmi con adorazione (o forse sta solo calcolando la traiettoria per staccarmi un dito)? Ecco, quello è <strong>Mr. Big</strong>.</p>
+      <p>Avete presente quella palletta di pelo bianco e nero che compare nella mia foto sul blog? Quello che sembra guardarmi con adorazione (o forse sta solo calcolando la previsione per staccarmi un dito)? Ecco, quello è <strong>Mr. Big</strong>.</p>
       <p>Il nome, ovviamente, è un omaggio a <em>Sex and the City</em>, ma ammettiamolo: è pura ironia. Mr. Big è un nanetto di un chilo e mezzo scarso. Un concentrato di ego spropositato stipato in un corpo da peluche tascabile.</p>
       <p>La sua storia inizia come quella di tanti altri "catorci" che finiscono nel mio giardino: dopo anni di galera in una gabbia, i vecchi proprietari hanno deciso di regalargli una vita migliore. "Lo mandiamo in campagna", hanno detto. "Sarà libero", hanno pensato. Poveri illusi.</p>
       
