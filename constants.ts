@@ -79,7 +79,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">Il verdetto della veterinaria</h4>
       <p>Se pensate di addobbare il territorio dei vostri lagomorfi, sappiate che non state facendo "atmosfera". State solo fornendo materiale da cantiere a dei vandali che non sanno cosa farsene della pace nel mondo. E se poi si fanno male fate anche lavorare me durante le feste!</p>
       
-      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul telto di casa.</p>
+      <p>Per fortuna i miei barbari vivono in giardino e me ne guardo bene dal mettere un albero fuori, in balia delle loro menti contorte. Come minimo me lo ritroverei sul tetto di casa.</p>
     `
   },
   {
@@ -101,7 +101,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h4 class="text-xl font-bold text-pink-600 mt-6 mb-3">E poi ci sono loro. Le brutte persone.</h4>
       <p>Mentre le pecore belano indignate dal riparo e le oche se la godono avvolte dalle loro piume impenetrabili, i conigli scelgono la via della psicopatia. Vi aspettereste che cerchino un riparo? Macché. I conigli restano sotto il diluvio. Immobili. Fradici.</p>
       
-      <p>Con il pelo appiccicato che li fa sembrare degli Ewok usciti male, ti fissano attraverso la pioggia con aria di sfida. Non si lamentano, non cercare conforto. Stanno lì, nel fango, a dimostrarmi che loro sono superiori anche agli agenti atmosferici. Poi, se si ammalano, tocca a me curarli...</p>
+      <p>Con il pelo appiccicato che li fa sembrare degli Ewok usciti male, ti fissano attraverso la pioggia con aria di sfida. Non si lamentano, non cercano conforto. Stanno lì, nel fango, a dimostrarmi che loro sono superiori anche agli agenti atmosferici. Poi, se si ammalano, tocca a me curarli...</p>
       
       <p class="bg-pink-50 p-4 rounded-xl text-pink-600 font-bold italic mt-4 border-l-4 border-pink-400">Quindi, se vi sentite tristi per il maltempo, pensate ai miei conigli: bagnati, brutti e, come sempre, arrabbiati col mondo. Il loro odio è il migliore ombrello.</p>
     `
@@ -113,7 +113,7 @@ export const BLOG_POSTS: BlogPost[] = [
     isoDate: "2025-12-15",
     author: "Maia N. Fiorelli",
     readTime: "4 min",
-    imageUrl: "https://scontent-mxp1-1.xx.fbcdn.net/v/t39.30808-6/497115556_717636724175775_4435312892779509343_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cxgQd9IJJcgQ7kNvwGZZNMi&_nc_oc=AdlWlKgk49u0-7MgerDnRRG1CXa9TcI5itP9hgM9fv7dlFv4dJT8PZxLrk86fRDbMp0&_nc_zt=23&_nc_ht=scontent-mxp1-1.xx&_nc_gid=da0Rt4PgyEufMQ97FoGGYg&oh=00_Afm7CruUEIK_ofA2SRzIYH_rCnN2FpS4mxjpX1DvaSKbhw&oe=69461F36",
+    imageUrl: "https://i.postimg.cc/J0VnKVkq/485630518-680266101238037-741278507681504802-n.jpg",
     excerpt: "Il web è in fiamme. Tutti parlano della famiglia 'hippie' in Abruzzo. Io leggo e sorrido. Perché tutto questo scalpore per due umani che decidono di vivere nel disagio? Venite nel mio giardino.",
     content: `
       <p>Il web è in fiamme. Non letteralmente, purtroppo – quello risolverebbe il problema del freddo umido che mi entra nelle ossa mentre cerco di convincere Plotone che l'antibiotico non è veleno per topi – ma metaforicamente. Tutti parlano della famiglia "hippie" in Abruzzo.</p>
@@ -142,7 +142,7 @@ export const BLOG_POSTS: BlogPost[] = [
     isoDate: "2025-12-15",
     author: "Maia N. Fiorelli",
     readTime: "3 min",
-    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/536676595_793063703299743_7859167366248459174_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JBfTAEZ9ZCQQ7kNvwHL5tjL&_nc_oc=Adk9GEn3ita7B8v6egcPCcIg4Mk4KvkkbTTncYqrF_kePGqCePJn85rSyhGW4XY_phM&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=Qnzcn5HlwTHFh9XGAB5nzQ&oh=00_AfkyNalRK8O04ctBWA7Ca4WVT36ykn5b_6_oK4cRITNVeA&oe=69461493",
+    imageUrl: "https://i.postimg.cc/BbrvYWPt/558046195-825650436707736-4374533446601349017-n.jpg",
     excerpt: "Tutto è iniziato con un nome, o meglio, con un errore burocratico. Doveva chiamarsi Platone... ma la realtà ha deciso di prenderci in giro: benvenuto Plotone.",
     content: `
       <p>Tutto è iniziato con un nome, o meglio, con un errore burocratico. Quando le intenzioni erano nobili, quasi accademiche. Doveva chiamarsi Platone: era quello il nome che gli avevano dato i volontari che se ne prendevano cura. Ci piaceva l’idea di un coniglio saggio, che meditasse sul mondo delle idee mentre sgranocchiava un filo d’erba.</p>
@@ -206,7 +206,7 @@ export const BLOG_POSTS: BlogPost[] = [
     isoDate: "2025-12-13",
     author: "Maia N. Fiorelli",
     readTime: "3 min",
-    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/571283279_845469701392476_8698690387579433516_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=j9FF2t5nvtMQ7kNvwHLcX95&_nc_oc=AdlhP2KQDa2gDRANVo2lB5hlVw3Qr8xJ5apDNczL_LaCnCDe4wZv-nmC4meUS3pkZGM&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=ZkWQwHNd0PlGEGv8b2?NOQ&oh=00_AflsrUH6d2wuQA7bqCpFREU-wEEGJ6SyzDeZcNW-tclIUg&oe=6943706D",
+    imageUrl: "https://i.postimg.cc/FK4LFSRk/571283279-845469701392476-8698690387579433516-n.jpg",
     excerpt: "Ci sono vuoti che vanno riempiti, e non parlo solo di quelli nello stomaco delle Bambine. Parlo del vuoto lasciato da Romeo. Ed è così che è arrivata BlaBlaBla.",
     content: `
       <p>Ci sono vuoti che vanno riempiti, e non parlo solo di quelli nello stomaco delle Bambine (le pecore) o del mio bisogno patologico di complicarmi la vita. Parlo del vuoto lasciato da Romeo.</p>
@@ -233,7 +233,7 @@ export const BLOG_POSTS: BlogPost[] = [
     isoDate: "2025-12-13",
     author: "Maia N. Fiorelli",
     readTime: "3 min",
-    imageUrl: "https://scontent-mxp2-1.xx.fbcdn.net/v/t39.30808-6/568949045_849805024284143_6404322187829837797_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MncBuU5YNUMQ7kNvwG7QwcB&_nc_oc=Adm367IrShAlhgfju95KyIZWi9mDP24QR4oh0cC8_1S1BImeZ0K7bF6HB4nUa9uXPcg&_nc_zt=23&_nc_ht=scontent-mxp2-1.xx&_nc_gid=BGNCgD6Y52MomjyloLRR0Q&oh=00_AfkpTK2xrmWrwxmMDyMbpkEKAkKN__J6VsavKIa-j0dDww&oe=6942F97F",
+    imageUrl: "https://i.postimg.cc/rz28GS7H/568949045-849805024284143-6404322187829837797-n.jpg",
     excerpt: "Storia di un nanetto di un chilo e mezzo con un ego spropositato e di come Tsuki, la coniglia zen, gli ha insegnato l'educazione a suon di botte.",
     content: `
       <p>Avete presente quella palletta di pelo bianco e nero che compare nella mia foto sul blog? Quello che sembra guardarmi con adorazione (o forse sta solo calcolando la previsione per staccarmi un dito)? Ecco, quello è <strong>Mr. Big</strong>.</p>
